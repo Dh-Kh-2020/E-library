@@ -15,6 +15,9 @@
     --footer-2nd-bg: #e6e6e6;
     --footer-1st-text: #a6a6a6;
     --footer-2nd-text: #333;
+    --sectin-h2-color: #5e2f26;
+    --offers-h2-color: #3c4858;
+    /* --sec-titl-color: ; */
 }
 
 body{
@@ -87,8 +90,10 @@ header{
 
 .logo img{
     /* border: solid 1px blue; */
-    width: 98px;
-    height: 90px;
+    /* width: 98px;
+    height: 90px; */
+    width: 6rem;
+    height: 5.8rem;
 }
 
 .rest-wrapper{
@@ -152,6 +157,8 @@ input[type="search"]::placeholder{
 main{
     margin: 1.5rem auto;
 }
+
+/* === Slider === */
 
 .slider-container {
     display: flex;
@@ -255,6 +262,146 @@ a.slide__next,
     border-radius: 2px;
     background-color: rgba(133, 133, 133, 0.5);
     margin: 0 10px 0 10px;
+}
+
+/* === Viweing Section === */
+
+.section-viewing-container{
+    margin: 2.5rem auto;
+    display: flex;
+    flex-direction: column;
+    width: 95%;
+    /* margin: auto; */
+    /* border: red 1px solid; */
+}
+
+.section-viewing-container h2{
+    color: var(--sectin-h2-color);
+    font-size: 1.4em;
+    padding-right: 2rem;
+}
+
+.section-veiwer{
+    width: 95%;
+    margin: auto;
+    /* border: black 1px solid; */
+    display: flex;
+    justify-content: center;
+    flex-shrink: 7;
+}
+
+.section-card{
+    width: calc(100%/7);
+    border-radius: 8px;
+    box-shadow: 0 1px 8px 0 rgb(0 0 0 / 20%), 0 3px 3px -2px rgb(0 0 0 / 12%), 0 3px 4px 0 rgb(0 0 0 / 14%);
+    margin: 0.313rem 0.938rem;
+}
+
+/* === CURRENT OFFERS === */
+
+.current-offers-container{
+    margin: 2.5rem auto;
+    /* padding-bottom: 10px; */
+    display: flex;
+    flex-direction: column;
+    width: 95%;
+    /* border: red 1px solid; */
+}
+
+.curr-offer-t{
+    /* border: green 1px solid; */
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 1.563rem;
+}
+
+.curr-offer-t h2{
+    font-weight: 700;
+    line-height: 1em;
+    color: var(--offers-h2-color);
+    text-transform: none;
+    padding-right: 2rem;
+}
+
+.curr-offer-t span a{
+    color: #0052cc;
+    padding-left: 1.563rem;
+}
+
+.current-offers{
+    width: 95%;
+    margin: auto;
+    /* border: blue 1px solid; */
+    display: flex;
+    justify-content: center;
+    flex-shrink: 5;
+}
+
+.offer-card{
+    border: 1px solid #e2dfdf;
+    width: calc(100%/5);
+    border-radius: 5px;
+    margin: 0.313rem 0.313rem;
+    /* margin: 0 0.313rem; */
+} 
+
+.book-interface{
+    width: 100%;
+    height: 50%;
+    /* border: red 1px solid; */
+}
+
+.book-interface img{
+    width: 100%;
+    height: 100%;
+    /* border: blue 1px solid; */
+}
+
+.offer-card-lable{
+    display: flex;
+    justify-content: space-between;
+    /* border: blue 1px solid; */
+    width: 58%;
+    margin: 0.25rem auto 0 auto;
+}
+
+.offer-book-name{
+    font-size: 0.938rem;
+    text-align: center;
+}
+
+.offer-book-cost{
+    text-align: center;
+    margin-top: 20px;
+}
+
+.offer-book-cost p:first-child{
+    color: #f70008;
+}
+
+.offer-book-cost p:first-child span{
+    font-size: 1.5rem;
+    font-weight:900;
+}
+
+.offer-book-cost p:last-child{
+    font-size: 0.625rem;
+    color: #c0ccda;
+}
+
+.offer-card-icons{
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    margin-top: 2.3rem;
+    /* position: relative;
+    bottom: 0; */
+    border: 1px solid blue;
+}
+
+.offer-card-icons img:nth-child(2){
+    width: 50px;
+    height: 50px;
 }
 
 /* ====== FOOTER ====== */
@@ -362,4 +509,272 @@ footer{
 .footer-2nd{
     background-color: var(--footer-2nd-bg);
     color: var(--footer-2nd-text);
+}
+
+
+/* ========== Resbonsive ========== */
+
+
+@media (max-width: 484px) {
+    .col-xs-1 {
+        flex: 0 0 auto;
+        width: 8.333%;
+    }
+
+    .col-xs-2 {
+        flex: 0 0 auto;
+        width: 16.666%;
+    }
+
+    .col-xs-3 {
+        flex: 0 0 auto;
+        width: 25%;
+    }
+
+    .col-xs-4 {
+        flex: 0 0 auto;
+        width: 33.333%;
+    }
+
+    .col-xs-5 {
+        flex: 0 0 auto;
+        width: 41.667%;
+    }
+
+    .col-xs-6 {
+        flex: 0 0 auto;
+        width: 50%;
+    }
+
+    .col-xs-7 {
+        flex: 0 0 auto;
+        width: 58.333%;
+    }
+
+    .col-xs-8 {
+        flex: 0 0 auto;
+        width: 66.667%;
+    }
+
+    .col-xs-9 {
+        flex: 0 0 auto;
+        width: 75%;
+    }
+
+    .col-xs-10 {
+        flex: 0 0 auto;
+        width: 83.333%;
+    }
+
+    .col-xs-11 {
+        flex: 0 0 auto;
+        width: 91.666%;
+    }
+
+    .col-xs-12 {
+        flex: 0 0 auto;
+        width: 100%;
+    }
+}
+
+@media (min-width: 486px) {
+    .col-sm-1 {
+        flex: 0 0 auto;
+        width: 8.333%;
+    }
+
+    .col-sm-2 {
+        flex: 0 0 auto;
+        width: 16.666%;
+    }
+
+    .col-sm-3 {
+        flex: 0 0 auto;
+        width: 25%;
+    }
+
+    .col-sm-4 {
+        flex: 0 0 auto;
+        width: 33.333%;
+    }
+
+    .col-sm-5 {
+        flex: 0 0 auto;
+        width: 41.667%;
+    }
+
+    .col-sm-6 {
+        flex: 0 0 auto;
+        width: 50%;
+    }
+
+    .col-sm-7 {
+        flex: 0 0 auto;
+        width: 58.333%;
+    }
+
+    .col-sm-8 {
+        flex: 0 0 auto;
+        width: 66.667%;
+    }
+
+    .col-sm-9 {
+        flex: 0 0 auto;
+        width: 75%;
+    }
+
+    .col-sm-10 {
+        flex: 0 0 auto;
+        width: 83.333%;
+    }
+
+    .col-sm-11 {
+        flex: 0 0 auto;
+        width: 91.666%;
+    }
+
+    .col-sm-12 {
+        flex: 0 0 auto;
+        width: 100%;
+    }
+
+    .d-sm-none {
+        display: none;
+    }
+
+    .d-sm-flex {
+        display: flex;
+    }
+
+    .d-sm-block {
+        display: block;
+    }
+}
+
+@media (min-width: 720px) {
+    .col-md-1 {
+        flex: 0 0 auto;
+        width: 8.333%;
+    }
+
+    .col-md-2 {
+        flex: 0 0 auto;
+        width: 16.666%;
+    }
+
+    .col-md-3 {
+        flex: 0 0 auto;
+        width: 25%;
+    }
+
+    .col-md-4 {
+        flex: 0 0 auto;
+        width: 33.333%;
+    }
+
+    .col-md-5 {
+        flex: 0 0 auto;
+        width: 41.667%;
+    }
+
+    .col-md-6 {
+        flex: 0 0 auto;
+        width: 50%;
+    }
+
+    .col-md-7 {
+        flex: 0 0 auto;
+        width: 58.333%;
+    }
+
+    .col-md-8 {
+        flex: 0 0 auto;
+        width: 66.667%;
+    }
+
+    .col-md-9 {
+        flex: 0 0 auto;
+        width: 75%;
+    }
+
+    .col-md-10 {
+        flex: 0 0 auto;
+        width: 83.333%;
+    }
+
+    .col-md-11 {
+        flex: 0 0 auto;
+        width: 91.666%;
+    }
+
+    .col-md-12 {
+        flex: 0 0 auto;
+        width: 100%;
+    }
+
+    .d-md-block {
+        display: block !important;
+    }
+}
+
+@media (min-width: 960px) {
+    .col-lg-1 {
+        flex: 0 0 auto;
+        width: 8.333%;
+    }
+
+    .col-lg-2 {
+        flex: 0 0 auto;
+        width: 16.666%;
+    }
+
+    .col-lg-3 {
+        flex: 0 0 auto;
+        width: 25%;
+    }
+
+    .col-lg-4 {
+        flex: 0 0 auto;
+        width: 33.333%;
+    }
+
+    .col-lg-5 {
+        flex: 0 0 auto;
+        width: 41.667%;
+    }
+
+    .col-lg-6 {
+        flex: 0 0 auto;
+        width: 50%;
+    }
+
+    .col-lg-7 {
+        flex: 0 0 auto;
+        width: 58.333%;
+    }
+
+    .col-lg-8 {
+        flex: 0 0 auto;
+        width: 66.667%;
+    }
+
+    .col-lg-9 {
+        flex: 0 0 auto;
+        width: 75%;
+    }
+
+    .col-lg-10 {
+        flex: 0 0 auto;
+        width: 83.333%;
+    }
+
+    .col-lg-11 {
+        flex: 0 0 auto;
+        width: 91.666%;
+    }
+
+    .col-lg-12 {
+        flex: 0 0 auto;
+        width: 100%;
+    }
 }

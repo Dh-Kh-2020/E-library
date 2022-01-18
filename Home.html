@@ -5,7 +5,11 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+    <!-- ===== CSS SELF SHEETS ===== -->
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/login.css">
+
+    <!-- ===== FONT AWSOME ===== -->
     <link rel="stylesheet" href="css/all.min.css">
     <link rel="stylesheet" href="css/all.css">
 
@@ -18,7 +22,38 @@
      <!-- ====== HEADER ====== -->
     <header>
         <nav class="main-nav">
-            <a href="#" class="signup-now"><span class="nav-icons"><i class="fas fa-user"></i></span> ادخل لحسابك أو سجل الآن </a>
+            <!-- Trigger opening the Modal -->
+            <a href="#" class="signup-now" id="myBtn" ><span class="nav-icons"><i class="fas fa-user"></i></span> ادخل لحسابك أو سجل الآن </a>
+                <!-- The Modal -->    
+                <div id="myModal" class="modal">
+                    <!-- Modal content -->
+                    <div class="modal-content">
+                        <span class="close">&times;</span>
+                        <div class="login-container">
+                            <h1>تسجيل الدخول</h1>
+                            <div class="login-form-container">
+                                <form action="">
+                                    <!-- <div> -->
+                                        <input type="email" name="email" id="email" class="email" placeholder="البريد الإلكتروني أو رقم الجوال">
+                                    <!-- </div>
+                                    <div> -->
+                                        <input type="password" name="password" id="password" class="password" placeholder="كلمة السر">
+                                        <span>نسيت؟</span>
+                                    <!-- </div>
+                                    <div> -->
+                                        <input type="submit" value="تسجيل الدخول">
+                                    <!-- </div> -->
+                                </form>
+                            </div>
+                        </div>
+                        <div class="have-account">
+                            <p>ليس لديك حساب؟</p>
+                            <a href="#">
+                                <button>إنشاء حساب جديد</button>
+                            </a>
+                        </div>
+                    </div>
+                </div>    
             <a href="#"><span class="nav-icons"><i class="fas fa-star"></i></span> الرئيسية </a>
             <a href="#"><span class="nav-icons"><i class="fas fa-truck"></i></span> من نحن </a>
             <a href="#"><span class="nav-icons"><i class="uil uil-shield-check"></i></i></span> اتصل بنا</a>
@@ -83,6 +118,173 @@
             </div>
         </section>
         <!-- === END SLIDER BANNER === -->
+
+        <!-- === SECTIONS VIEWER === -->
+        <section class="section-viewing-container">
+            <h2>تصفح حسب القسم</h2>
+            <div class="section-veiwer">
+                <div class="section-card">
+                    <div class="section-icon"><img src="imgs/dinn.svg" alt="دين"></div>
+                    <div class="section-title">
+                        <h2>دين</h2>
+                    </div>
+                </div>
+                <div class="section-card">
+                    <div class="section-icon"><img src="imgs/dinn.svg" alt="دين"></div>
+                    <div class="section-title">
+                        <h2>تاريخ</h2>
+                    </div>
+                </div>
+                <div class="section-card">
+                    <div class="section-icon"><img src="imgs/dinn.svg" alt="دين"></div>
+                    <div class="section-title">
+                        <h2>روايات</h2>
+                    </div>
+                </div>
+                <div class="section-card">
+                    <div class="section-icon"><img src="imgs/dinn.svg" alt="دين"></div>
+                    <div class="section-title">
+                        <h2>سياسة</h2>
+                    </div>
+                </div>
+                <div class="section-card">
+                    <div class="section-icon"><img src="imgs/dinn.svg" alt="دين"></div>
+                    <div class="section-title">
+                        <h2>اقتصاد</h2>
+                    </div>
+                </div>
+                <div class="section-card">
+                    <div class="section-icon"><img src="imgs/dinn.svg" alt="دين"></div>
+                    <div class="section-title">
+                        <h2>طبخ</h2>
+                    </div>
+                </div>
+                <div class="section-card">
+                    <div class="section-icon"><img src="imgs/dinn.svg" alt="دين"></div>
+                    <div class="section-title">
+                        <h2>تربية</h2>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- === END SECTIONS VIEWER === -->
+
+        <!-- === CURRENT OFFERS === -->
+        <section class="current-offers-container">
+            <div class="curr-offer-t">
+                <h2>العروض الحالية</h2>
+                <span><a href="#">عرض الكل</a></span>
+            </div>
+            <div class="current-offers">
+                <div class="offer-card">
+                    <div class="book-interface">
+                        <img src="imgs/book-1.svg" alt="">
+                    </div>
+                    <div class="offer-card-lable">
+                        <div><img src="imgs/lib-book-icon.svg" alt=""></div>
+                        <h4>كتاب إلكتروني</h4>
+                    </div>
+                    <div class="offer-book-name">تشامبل عندما يولد المرء مرتين</div>
+                    <div class="offer-book-cost">
+                        <p>
+                            <span class="cost">17.99</span>ر.س.
+                        </p>
+                        <p class="Tax">شامل الضريبة</p>
+                    </div>
+                    <div class="offer-card-icons">
+                        <img src="imgs/star.svg" alt="">
+                        <img src="imgs/bascket-offer.svg" alt="">
+                        <img src="imgs/cross-arrow.svg" alt="">
+                    </div>
+                </div>
+                <div class="offer-card">
+                    <div class="book-interface">
+                        <img src="imgs/book-1.svg" alt="">
+                    </div>
+                    <div class="offer-card-lable">
+                        <div><img src="imgs/lib-book-icon.svg" alt=""></div>
+                        <h4>كتاب إلكتروني</h4>
+                    </div>
+                    <div class="offer-book-name">تشامبل عندما يولد المرء مرتين</div>
+                    <div class="offer-book-cost">
+                        <p>
+                            <span class="cost">17.99</span>ر.س.
+                        </p>
+                        <p class="Tax">شامل الضريبة</p>
+                    </div>
+                    <div class="offer-card-icons">
+                        <img src="imgs/star.svg" alt="">
+                        <img src="imgs/bascket-offer.svg" alt="">
+                        <img src="imgs/cross-arrow.svg" alt="">
+                    </div>
+                </div>
+                <div class="offer-card">
+                    <div class="book-interface">
+                        <img src="imgs/book-1.svg" alt="">
+                    </div>
+                    <div class="offer-card-lable">
+                        <div><img src="imgs/lib-book-icon.svg" alt=""></div>
+                        <h4>كتاب إلكتروني</h4>
+                    </div>
+                    <div class="offer-book-name">تشامبل عندما يولد المرء مرتين</div>
+                    <div class="offer-book-cost">
+                        <p>
+                            <span class="cost">17.99</span>ر.س.
+                        </p>
+                        <p class="Tax">شامل الضريبة</p>
+                    </div>
+                    <div class="offer-card-icons">
+                        <img src="imgs/star.svg" alt="">
+                        <img src="imgs/bascket-offer.svg" alt="">
+                        <img src="imgs/cross-arrow.svg" alt="">
+                    </div>
+                </div>
+                <div class="offer-card">
+                    <div class="book-interface">
+                        <img src="imgs/book-1.svg" alt="">
+                    </div>
+                    <div class="offer-card-lable">
+                        <div><img src="imgs/lib-book-icon.svg" alt=""></div>
+                        <h4>كتاب إلكتروني</h4>
+                    </div>
+                    <div class="offer-book-name">تشامبل عندما يولد المرء مرتين</div>
+                    <div class="offer-book-cost">
+                        <p>
+                            <span class="cost">17.99</span>ر.س.
+                        </p>
+                        <p class="Tax">شامل الضريبة</p>
+                    </div>
+                    <div class="offer-card-icons">
+                        <img src="imgs/star.svg" alt="">
+                        <img src="imgs/bascket-offer.svg" alt="">
+                        <img src="imgs/cross-arrow.svg" alt="">
+                    </div>
+                </div>
+                <div class="offer-card">
+                    <div class="book-interface">
+                        <img src="imgs/book-1.svg" alt="">
+                    </div>
+                    <div class="offer-card-lable">
+                        <div><img src="imgs/lib-book-icon.svg" alt=""></div>
+                        <h4>كتاب إلكتروني</h4>
+                    </div>
+                    <div class="offer-book-name">تشامبل عندما يولد المرء مرتين</div>
+                    <div class="offer-book-cost">
+                        <p>
+                            <span>17.99</span>ر.س.
+                        </p>
+                        <p>شامل الضريبة</p>
+                    </div>
+                    <div class="offer-card-icons">
+                        <img src="imgs/star.svg" alt="">
+                        <img src="imgs/bascket-offer.svg" alt="">
+                        <img src="imgs/cross-arrow.svg" alt="">
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- === END CURRENT OFFERS === -->
+
     </main>
     <!--  ====== END MAIN SECTION ====== -->
 
@@ -151,14 +353,14 @@
 
             <div class="lib-links">
                 <a href="#"><h3> تواصل معنا </h3></a>
-                <!-- <div class="soicial-icons">
-                    <a href="#"> <img src="imgs/facebook-icon.png" alt=""> </a>
-                    <a href="#"> <img src="imgs/png-clipart-twitter-twitter-thumbnail.png" alt=""> </a>
-                    <a href="#"> <img src="" alt=""> </a>
-                    <a href="#"> <img src="" alt=""> </a>
-                    <a href="#"> <img src="" alt=""> </a>
-                    <a href="#"> <img src="" alt=""> </a>
-                    <a href="#"> <img src="" alt=""> </a>
+                <!-- <div class="social-icons">
+                    <a href="#"> <img src="imgs/facebook-icon.svg" alt="" class="soci-icon"> </a>
+                    <a href="#"> <img src="imgs/twitter-icon.svg" alt="" class="soci-icon"> </a>
+                    <a href="#"> <img src="imgs/youtube-icon.svg" alt="" class="soci-icon"> </a>
+                    <a href="#"> <img src="imgs/instagram.svg" alt="" class="soci-icon"> </a>
+                    <a href="#"> <img src="imgs/linkedIn-icon.svg" alt="" class="soci-icon"> </a>
+                    <a href="#"> <img src="imgs/snap-icon.svg" alt="" class="soci-icon"> </a>
+                    <a href="#"> <img src="imgs/tiktok-icon.svg" alt="" class="soci-icon"> </a>
                 </div> -->
             </div>
         </div>
@@ -168,5 +370,7 @@
         </div>
     </footer>
     <!--  ====== END FOOTER ====== -->
+
+    <script src="js/main.js"></script>
 </body>
 </html>
