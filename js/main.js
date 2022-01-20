@@ -50,3 +50,18 @@ const updatedTime = setInterval(function(){
     document.getElementById("offer-counting5").innerHTML = "time Expoired";
   }
 }, 1000);
+
+function search_books() {
+  let input = document.getElementById('search_box').value
+  input=input.toLowerCase();
+  let book = document.getElementsByClassName('books');
+    
+  for (i = 0; i < book.length; i++) { 
+      if (!book[i].alt.toLowerCase().includes(input)) {
+          book[i].style.display="none";
+      }
+      else {
+          book[i].style.display="list-item";                 
+      }
+  }
+}
