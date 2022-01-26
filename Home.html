@@ -19,7 +19,7 @@
     <title>E-library</title>
 </head>
 <body>
-     <!-- ====== HEADER ====== -->
+    <!-- ====== HEADER ====== -->
     <header>
         <nav class="main-nav">
             <!-- Trigger opening the Modal -->
@@ -71,7 +71,7 @@
             <div class="rest-wrapper">
                 <div class="search-area">
                     <form action="">
-                        <input type="search" id="search_box" name="search_box" placeholder="البحث">
+                        <input type="search" id="search_box" name="search_box" placeholder="البحث" onkeyup="search_books()">
                         <div class="magnifying_glass-icon">
                             <i class="uil uil-search"></i>
                         </div>
@@ -88,36 +88,32 @@
         <!-- === SLIDER BANNER === -->
         <section class="slider-container">
             <div class="slider">
-                <div class="slides">
-                    <div id="slides__1" class="slide">
-                        <img src="imgs/slider.png" alt="" class="slide__img">
-                        <a class="slide__prev" href="#slides__4" title="Next"></a>
-                        <a class="slide__next" href="#slides__2" title="Next"></a>
-                    </div>
-                    <div id="slides__2" class="slide">
-                        <img src="imgs/MB-ksa-1301-office-bags-50percent-discount-ar.jpg" alt="" class="slide__img">
-                        <a class="slide__prev" href="#slides__1" title="Prev"></a>
-                        <a class="slide__next" href="#slides__3" title="Next"></a>
-                    </div>
-                    <div id="slides__3" class="slide">
-                        <img src="imgs/MB-ksa-1201-samsung_s21fe_5g_trade_in-ar.jpg" alt="" class="slide__img">
-                        <a class="slide__prev" href="#slides__2" title="Prev"></a>
-                        <a class="slide__next" href="#slides__4" title="Next"></a>
-                    </div>
-                    <div id="slides__4" class="slide">
-                        <img src="imgs/MB-ksa-1601-huawei-watch-gt-runner-po-ar.jpg" alt="" class="slide__img">
-                        <a class="slide__prev" href="#slides__3" title="Prev"></a>
-                        <a class="slide__next" href="#slides__1" title="Prev"></a>
-                    </div>
-                </div>
-                <div class="slider__nav">
-                        <a class="slider__navlink" href="#slides__1"></a>
-                        <a class="slider__navlink" href="#slides__2"></a>
-                        <a class="slider__navlink" href="#slides__3"></a>
-                        <a class="slider__navlink" href="#slides__4"></a>
-                </div>
+                <img src="imgs/slider.png" alt="">
+                <!-- <a class="slide__prev" href="#slides__4" title="Next"></a>
+                <a class="slide__next" href="#slides__2" title="Next"></a> -->
             </div>
+            <div class="slider">
+                <img src="imgs/MB-ksa-1301-office-bags-50percent-discount-ar.jpg" alt="">
+                <!-- <a class="slide__prev" href="#slides__1" title="Prev"></a>
+                <a class="slide__next" href="#slides__3" title="Next"></a> -->
+            </div>
+            <div class="slider">
+                <img src="imgs/MB-ksa-1201-samsung_s21fe_5g_trade_in-ar.jpg" alt="">
+                <!-- <a class="slide__prev" href="#slides__2" title="Prev"></a>
+                <a class="slide__next" href="#slides__4" title="Next"></a> -->
+            </div>
+            <div class="slider">
+                <img src="imgs/MB-ksa-1601-huawei-watch-gt-runner-po-ar.jpg" alt="">
+                <!-- <a class="slide__prev" href="#slides__3" title="Prev"></a>
+                <a class="slide__next" href="#slides__1" title="Prev"></a> -->
+            </div>   
         </section>
+        <div class="slider__nav-container">
+            <span class="slider__nav"> </span>
+            <span class="slider__nav"> </span>
+            <span class="slider__nav"> </span>
+            <span class="slider__nav"> </span>
+        </div>
         <!-- === END SLIDER BANNER === -->
 
         <!-- === SECTIONS VIEWER === -->
@@ -125,55 +121,200 @@
             <a href="pages/category.html"><h2>تصفح حسب القسم</h2></a>
             <div class="section-veiwer">
                 <div class="section-card">
-                    <div class="section-icon"><img src="imgs/dinn.svg" alt="دين"></div>
+                    <div class="section-icon"><img src="imgs/dinn.svg" alt="relagin"></div>
                     <div class="section-title">
-                        <h2>دين</h2>
+                        <h3 class="dinn">دين</h3>
                     </div>
                 </div>
                 <div class="section-card">
-                    <div class="section-icon"><img src="imgs/dinn.svg" alt="دين"></div>
+                    <div class="section-icon"><img src="imgs/history.svg" alt="history"></div>
                     <div class="section-title">
-                        <h2>تاريخ</h2>
+                        <h3 class="history">تاريخ</h3>
                     </div>
                 </div>
                 <div class="section-card">
-                    <div class="section-icon"><img src="imgs/dinn.svg" alt="دين"></div>
+                    <div class="section-icon"><img src="imgs/Novels.svg" alt="novels"></div>
                     <div class="section-title">
-                        <h2>روايات</h2>
+                        <h3 class="novels">روايات</h3>
                     </div>
                 </div>
                 <div class="section-card">
-                    <div class="section-icon"><img src="imgs/dinn.svg" alt="دين"></div>
+                    <div class="section-icon"><img src="imgs/politic.svg" alt="politics"></div>
                     <div class="section-title">
-                        <h2>سياسة</h2>
+                        <h3 class="politics">سياسة</h3>
                     </div>
                 </div>
                 <div class="section-card">
-                    <div class="section-icon"><img src="imgs/dinn.svg" alt="دين"></div>
+                    <div class="section-icon"><img src="imgs/economy.svg" alt="economics"></div>
                     <div class="section-title">
-                        <h2>اقتصاد</h2>
+                        <h3 class="economics">اقتصاد</h3>
                     </div>
                 </div>
                 <div class="section-card">
-                    <div class="section-icon"><img src="imgs/dinn.svg" alt="دين"></div>
+                    <div class="section-icon"><img src="imgs/cooking.svg" alt="cooking"></div>
                     <div class="section-title">
-                        <h2>طبخ</h2>
+                        <h3 class="cooking">طبخ</h3>
                     </div>
                 </div>
                 <div class="section-card">
-                    <div class="section-icon"><img src="imgs/dinn.svg" alt="دين"></div>
+                    <div class="section-icon"><img src="imgs/education.svg" alt="education"></div>
                     <div class="section-title">
-                        <h2>تربية</h2>
+                        <h3 class="education">تربية</h3>
                     </div>
                 </div>
             </div>
+
+            <!-- <div class="sec-slider">
+                <a href="#" class="prev-sec"></a>
+                <a href="#" class="next-sec"></a>
+            </div> -->
         </section>
         <!-- === END SECTIONS VIEWER === -->
+
+        <!-- === ADVERTISEMENTS SECTION === -->
+        <section class="advertisements">
+            <div class="upper-adv-img">
+                <img src="imgs/sub-banners-ar1.jpg" alt="">
+                <img src="imgs/sub-banners-ar5.jpg" alt="">
+                <img src="imgs/sub-banners-ar6.jpg" alt="">
+                <img src="imgs/sub-banners-ar7.jpg" alt="">
+            </div>
+            <div class="lower-adv-img">
+                <img src="imgs/ev-ksa-0212-installment-service-ar2.jpg" alt="">
+            </div>
+        </section>
+        <!-- === END ADVERTIZEMENTS SECTION === -->
 
         <!-- === CURRENT OFFERS === -->
         <section class="current-offers-container">
             <div class="curr-offer-t">
                 <h2>العروض الحالية</h2>
+                <span><a href="#">عرض الكل</a></span>
+            </div>
+            <div class="current-offers">
+                <div class="offer-card">
+                    <div class="book-interface">
+                        <img src="imgs/book-1.svg" alt="">
+                    </div>
+                    <div class="offer-card-lable">
+                        <div><img src="imgs/lib-book-icon.svg" alt=""></div>
+                        <h4>كتاب إلكتروني</h4>
+                    </div>
+                    <div class="offer-book-name">تشامبل عندما يولد المرء مرتين</div>
+                    <div class="offer-book-cost">
+                        <p>
+                            <del><span class="cost"> 27.5</span></del>
+                            <span class="cost"> 17.99</span>ر.س.
+                        </p>
+                        <p class="Tax">شامل الضريبة</p>
+                        <p id="offer-counting1"></p>
+                    </div>
+                    <div class="offer-card-icons">
+                        <img src="imgs/star.svg" alt="">
+                        <img src="imgs/bascket-offer.svg" alt="">
+                        <img src="imgs/cross-arrow.svg" alt="">
+                    </div>
+                </div>
+                <div class="offer-card">
+                    <div class="book-interface">
+                        <img src="imgs/book-1.svg" alt="">
+                    </div>
+                    <div class="offer-card-lable">
+                        <div><img src="imgs/lib-book-icon.svg" alt=""></div>
+                        <h4>كتاب إلكتروني</h4>
+                    </div>
+                    <div class="offer-book-name">لأنك الله</div>
+                    <div class="offer-book-cost">
+                        <p>
+                            <del><span class="cost"> 27.5</span></del>
+                            <span class="cost"> 17.99</span>ر.س.
+                        </p>
+                        <p class="Tax">شامل الضريبة</p>
+                        <p id="offer-counting2"></p>
+                    </div>
+                    <div class="offer-card-icons">
+                        <img src="imgs/star.svg" alt="">
+                        <img src="imgs/bascket-offer.svg" alt="">
+                        <img src="imgs/cross-arrow.svg" alt="">
+                    </div>
+                </div>
+                <div class="offer-card">
+                    <div class="book-interface">
+                        <img src="imgs/book-1.svg" alt="">
+                    </div>
+                    <div class="offer-card-lable">
+                        <div><img src="imgs/lib-book-icon.svg" alt=""></div>
+                        <h4>كتاب إلكتروني</h4>
+                    </div>
+                    <div class="offer-book-name">اربعون يوما من العزلة</div>
+                    <div class="offer-book-cost">
+                        <p>
+                            <del><span class="cost"> 27.5</span></del>
+                            <span class="cost"> 17.99</span>ر.س.
+                        </p>
+                        <p class="Tax">شامل الضريبة</p>
+                        <p id="offer-counting3"></p>
+                    </div>
+                    <div class="offer-card-icons">
+                        <img src="imgs/star.svg" alt="">
+                        <img src="imgs/bascket-offer.svg" alt="">
+                        <img src="imgs/cross-arrow.svg" alt="">
+                    </div>
+                </div>
+                <div class="offer-card">
+                    <div class="book-interface">
+                        <img src="imgs/book-1.svg" alt="">
+                    </div>
+                    <div class="offer-card-lable">
+                        <div><img src="imgs/lib-book-icon.svg" alt=""></div>
+                        <h4>كتاب إلكتروني</h4>
+                    </div>
+                    <div class="offer-book-name">تشامبل عندما يولد المرء مرتين</div>
+                    <div class="offer-book-cost">
+                        <p>
+                            <del><span class="cost"> 27.5</span></del>
+                            <span class="cost"> 17.99</span>ر.س.
+                        </p>
+                        <p class="Tax">شامل الضريبة</p>
+                        <p id="offer-counting4"></p>
+                    </div>
+                    <div class="offer-card-icons">
+                        <img src="imgs/star.svg" alt="">
+                        <img src="imgs/bascket-offer.svg" alt="">
+                        <img src="imgs/cross-arrow.svg" alt="">
+                    </div>
+                </div>
+                <div class="offer-card">
+                    <div class="book-interface">
+                        <img src="imgs/book-1.svg" alt="">
+                    </div>
+                    <div class="offer-card-lable">
+                        <div><img src="imgs/lib-book-icon.svg" alt=""></div>
+                        <h4>كتاب إلكتروني</h4>
+                    </div>
+                    <div class="offer-book-name">تشامبل عندما يولد المرء مرتين</div>
+                    <div class="offer-book-cost">
+                        <p>
+                            <del><span class="cost"> 27.5</span></del>
+                            <span class="cost"> 17.99</span>ر.س.
+                        </p>
+                        <p class="Tax">شامل الضريبة</p>
+                        <p id="offer-counting5"></p>
+                    </div>
+                    <div class="offer-card-icons">
+                        <img src="imgs/star.svg" alt="">
+                        <img src="imgs/bascket-offer.svg" alt="">
+                        <img src="imgs/cross-arrow.svg" alt="">
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- === END CURRENT OFFERS === -->
+
+        <!-- === RELAGIOUS BOOKS === -->
+        <section class="current-offers-container">
+            <div class="curr-offer-t">
+                <h2>الكتب الدينية</h2>
                 <span><a href="#">عرض الكل</a></span>
             </div>
             <div class="current-offers">
@@ -294,7 +435,637 @@
                 </div>
             </div>
         </section>
-        <!-- === END CURRENT OFFERS === -->
+        <!-- === END RELAGIOUS BOOKS === -->
+
+        <!-- === HISTORY BOOKS === -->
+        <section class="current-offers-container">
+            <div class="curr-offer-t">
+                <h2>الكتب التاريخية</h2>
+                <span><a href="#">عرض الكل</a></span>
+            </div>
+            <div class="current-offers">
+                <div class="offer-card">
+                    <div class="book-interface">
+                        <img src="imgs/book-1.svg" alt="">
+                    </div>
+                    <div class="offer-card-lable">
+                        <div><img src="imgs/lib-book-icon.svg" alt=""></div>
+                        <h4>كتاب إلكتروني</h4>
+                    </div>
+                    <div class="offer-book-name">تشامبل عندما يولد المرء مرتين</div>
+                    <div class="offer-book-cost">
+                        <p>
+                            <del><span class="cost"> 27.5</span></del>
+                            <span class="cost"> 17.99</span>ر.س.
+                        </p>
+                        <p class="Tax">شامل الضريبة</p>
+                        <p id="offer-counting1"></p>
+                    </div>
+                    <div class="offer-card-icons">
+                        <img src="imgs/star.svg" alt="">
+                        <img src="imgs/bascket-offer.svg" alt="">
+                        <img src="imgs/cross-arrow.svg" alt="">
+                    </div>
+                </div>
+                <div class="offer-card">
+                    <div class="book-interface">
+                        <img src="imgs/book-1.svg" alt="">
+                    </div>
+                    <div class="offer-card-lable">
+                        <div><img src="imgs/lib-book-icon.svg" alt=""></div>
+                        <h4>كتاب إلكتروني</h4>
+                    </div>
+                    <div class="offer-book-name">تشامبل عندما يولد المرء مرتين</div>
+                    <div class="offer-book-cost">
+                        <p>
+                            <del><span class="cost"> 27.5</span></del>
+                            <span class="cost"> 17.99</span>ر.س.
+                        </p>
+                        <p class="Tax">شامل الضريبة</p>
+                        <p id="offer-counting2"></p>
+                    </div>
+                    <div class="offer-card-icons">
+                        <img src="imgs/star.svg" alt="">
+                        <img src="imgs/bascket-offer.svg" alt="">
+                        <img src="imgs/cross-arrow.svg" alt="">
+                    </div>
+                </div>
+                <div class="offer-card">
+                    <div class="book-interface">
+                        <img src="imgs/book-1.svg" alt="">
+                    </div>
+                    <div class="offer-card-lable">
+                        <div><img src="imgs/lib-book-icon.svg" alt=""></div>
+                        <h4>كتاب إلكتروني</h4>
+                    </div>
+                    <div class="offer-book-name">تشامبل عندما يولد المرء مرتين</div>
+                    <div class="offer-book-cost">
+                        <p>
+                            <del><span class="cost"> 27.5</span></del>
+                            <span class="cost"> 17.99</span>ر.س.
+                        </p>
+                        <p class="Tax">شامل الضريبة</p>
+                        <p id="offer-counting3"></p>
+                    </div>
+                    <div class="offer-card-icons">
+                        <img src="imgs/star.svg" alt="">
+                        <img src="imgs/bascket-offer.svg" alt="">
+                        <img src="imgs/cross-arrow.svg" alt="">
+                    </div>
+                </div>
+                <div class="offer-card">
+                    <div class="book-interface">
+                        <img src="imgs/book-1.svg" alt="">
+                    </div>
+                    <div class="offer-card-lable">
+                        <div><img src="imgs/lib-book-icon.svg" alt=""></div>
+                        <h4>كتاب إلكتروني</h4>
+                    </div>
+                    <div class="offer-book-name">تشامبل عندما يولد المرء مرتين</div>
+                    <div class="offer-book-cost">
+                        <p>
+                            <del><span class="cost"> 27.5</span></del>
+                            <span class="cost"> 17.99</span>ر.س.
+                        </p>
+                        <p class="Tax">شامل الضريبة</p>
+                        <p id="offer-counting4"></p>
+                    </div>
+                    <div class="offer-card-icons">
+                        <img src="imgs/star.svg" alt="">
+                        <img src="imgs/bascket-offer.svg" alt="">
+                        <img src="imgs/cross-arrow.svg" alt="">
+                    </div>
+                </div>
+                <div class="offer-card">
+                    <div class="book-interface">
+                        <img src="imgs/book-1.svg" alt="">
+                    </div>
+                    <div class="offer-card-lable">
+                        <div><img src="imgs/lib-book-icon.svg" alt=""></div>
+                        <h4>كتاب إلكتروني</h4>
+                    </div>
+                    <div class="offer-book-name">تشامبل عندما يولد المرء مرتين</div>
+                    <div class="offer-book-cost">
+                        <p>
+                            <del><span class="cost"> 27.5</span></del>
+                            <span class="cost"> 17.99</span>ر.س.
+                        </p>
+                        <p class="Tax">شامل الضريبة</p>
+                        <p id="offer-counting5"></p>
+                    </div>
+                    <div class="offer-card-icons">
+                        <img src="imgs/star.svg" alt="">
+                        <img src="imgs/bascket-offer.svg" alt="">
+                        <img src="imgs/cross-arrow.svg" alt="">
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- === END HISTORY BOOKS === -->
+
+        <!-- === POLITICS BOOKS === -->
+        <section class="current-offers-container">
+            <div class="curr-offer-t">
+                <h2>السياسة</h2>
+                <span><a href="#">عرض الكل</a></span>
+            </div>
+            <div class="current-offers">
+                <div class="offer-card">
+                    <div class="book-interface">
+                        <img src="imgs/book-1.svg" alt="">
+                    </div>
+                    <div class="offer-card-lable">
+                        <div><img src="imgs/lib-book-icon.svg" alt=""></div>
+                        <h4>كتاب إلكتروني</h4>
+                    </div>
+                    <div class="offer-book-name">تشامبل عندما يولد المرء مرتين</div>
+                    <div class="offer-book-cost">
+                        <p>
+                            <del><span class="cost"> 27.5</span></del>
+                            <span class="cost"> 17.99</span>ر.س.
+                        </p>
+                        <p class="Tax">شامل الضريبة</p>
+                        <p id="offer-counting1"></p>
+                    </div>
+                    <div class="offer-card-icons">
+                        <img src="imgs/star.svg" alt="">
+                        <img src="imgs/bascket-offer.svg" alt="">
+                        <img src="imgs/cross-arrow.svg" alt="">
+                    </div>
+                </div>
+                <div class="offer-card">
+                    <div class="book-interface">
+                        <img src="imgs/book-1.svg" alt="">
+                    </div>
+                    <div class="offer-card-lable">
+                        <div><img src="imgs/lib-book-icon.svg" alt=""></div>
+                        <h4>كتاب إلكتروني</h4>
+                    </div>
+                    <div class="offer-book-name">تشامبل عندما يولد المرء مرتين</div>
+                    <div class="offer-book-cost">
+                        <p>
+                            <del><span class="cost"> 27.5</span></del>
+                            <span class="cost"> 17.99</span>ر.س.
+                        </p>
+                        <p class="Tax">شامل الضريبة</p>
+                        <p id="offer-counting2"></p>
+                    </div>
+                    <div class="offer-card-icons">
+                        <img src="imgs/star.svg" alt="">
+                        <img src="imgs/bascket-offer.svg" alt="">
+                        <img src="imgs/cross-arrow.svg" alt="">
+                    </div>
+                </div>
+                <div class="offer-card">
+                    <div class="book-interface">
+                        <img src="imgs/book-1.svg" alt="">
+                    </div>
+                    <div class="offer-card-lable">
+                        <div><img src="imgs/lib-book-icon.svg" alt=""></div>
+                        <h4>كتاب إلكتروني</h4>
+                    </div>
+                    <div class="offer-book-name">تشامبل عندما يولد المرء مرتين</div>
+                    <div class="offer-book-cost">
+                        <p>
+                            <del><span class="cost"> 27.5</span></del>
+                            <span class="cost"> 17.99</span>ر.س.
+                        </p>
+                        <p class="Tax">شامل الضريبة</p>
+                        <p id="offer-counting3"></p>
+                    </div>
+                    <div class="offer-card-icons">
+                        <img src="imgs/star.svg" alt="">
+                        <img src="imgs/bascket-offer.svg" alt="">
+                        <img src="imgs/cross-arrow.svg" alt="">
+                    </div>
+                </div>
+                <div class="offer-card">
+                    <div class="book-interface">
+                        <img src="imgs/book-1.svg" alt="">
+                    </div>
+                    <div class="offer-card-lable">
+                        <div><img src="imgs/lib-book-icon.svg" alt=""></div>
+                        <h4>كتاب إلكتروني</h4>
+                    </div>
+                    <div class="offer-book-name">تشامبل عندما يولد المرء مرتين</div>
+                    <div class="offer-book-cost">
+                        <p>
+                            <del><span class="cost"> 27.5</span></del>
+                            <span class="cost"> 17.99</span>ر.س.
+                        </p>
+                        <p class="Tax">شامل الضريبة</p>
+                        <p id="offer-counting4"></p>
+                    </div>
+                    <div class="offer-card-icons">
+                        <img src="imgs/star.svg" alt="">
+                        <img src="imgs/bascket-offer.svg" alt="">
+                        <img src="imgs/cross-arrow.svg" alt="">
+                    </div>
+                </div>
+                <div class="offer-card">
+                    <div class="book-interface">
+                        <img src="imgs/book-1.svg" alt="">
+                    </div>
+                    <div class="offer-card-lable">
+                        <div><img src="imgs/lib-book-icon.svg" alt=""></div>
+                        <h4>كتاب إلكتروني</h4>
+                    </div>
+                    <div class="offer-book-name">تشامبل عندما يولد المرء مرتين</div>
+                    <div class="offer-book-cost">
+                        <p>
+                            <del><span class="cost"> 27.5</span></del>
+                            <span class="cost"> 17.99</span>ر.س.
+                        </p>
+                        <p class="Tax">شامل الضريبة</p>
+                        <p id="offer-counting5"></p>
+                    </div>
+                    <div class="offer-card-icons">
+                        <img src="imgs/star.svg" alt="">
+                        <img src="imgs/bascket-offer.svg" alt="">
+                        <img src="imgs/cross-arrow.svg" alt="">
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- === END POLITICS BOOKS === -->
+
+        <!-- === ECONOMIC BOOKS === -->
+        <section class="current-offers-container">
+            <div class="curr-offer-t">
+                <h2>الاقتصاد</h2>
+                <span><a href="#">عرض الكل</a></span>
+            </div>
+            <div class="current-offers">
+                <div class="offer-card">
+                    <div class="book-interface">
+                        <img src="imgs/book-1.svg" alt="">
+                    </div>
+                    <div class="offer-card-lable">
+                        <div><img src="imgs/lib-book-icon.svg" alt=""></div>
+                        <h4>كتاب إلكتروني</h4>
+                    </div>
+                    <div class="offer-book-name">تشامبل عندما يولد المرء مرتين</div>
+                    <div class="offer-book-cost">
+                        <p>
+                            <del><span class="cost"> 27.5</span></del>
+                            <span class="cost"> 17.99</span>ر.س.
+                        </p>
+                        <p class="Tax">شامل الضريبة</p>
+                        <p id="offer-counting1"></p>
+                    </div>
+                    <div class="offer-card-icons">
+                        <img src="imgs/star.svg" alt="">
+                        <img src="imgs/bascket-offer.svg" alt="">
+                        <img src="imgs/cross-arrow.svg" alt="">
+                    </div>
+                </div>
+                <div class="offer-card">
+                    <div class="book-interface">
+                        <img src="imgs/book-1.svg" alt="">
+                    </div>
+                    <div class="offer-card-lable">
+                        <div><img src="imgs/lib-book-icon.svg" alt=""></div>
+                        <h4>كتاب إلكتروني</h4>
+                    </div>
+                    <div class="offer-book-name">تشامبل عندما يولد المرء مرتين</div>
+                    <div class="offer-book-cost">
+                        <p>
+                            <del><span class="cost"> 27.5</span></del>
+                            <span class="cost"> 17.99</span>ر.س.
+                        </p>
+                        <p class="Tax">شامل الضريبة</p>
+                        <p id="offer-counting2"></p>
+                    </div>
+                    <div class="offer-card-icons">
+                        <img src="imgs/star.svg" alt="">
+                        <img src="imgs/bascket-offer.svg" alt="">
+                        <img src="imgs/cross-arrow.svg" alt="">
+                    </div>
+                </div>
+                <div class="offer-card">
+                    <div class="book-interface">
+                        <img src="imgs/book-1.svg" alt="">
+                    </div>
+                    <div class="offer-card-lable">
+                        <div><img src="imgs/lib-book-icon.svg" alt=""></div>
+                        <h4>كتاب إلكتروني</h4>
+                    </div>
+                    <div class="offer-book-name">تشامبل عندما يولد المرء مرتين</div>
+                    <div class="offer-book-cost">
+                        <p>
+                            <del><span class="cost"> 27.5</span></del>
+                            <span class="cost"> 17.99</span>ر.س.
+                        </p>
+                        <p class="Tax">شامل الضريبة</p>
+                        <p id="offer-counting3"></p>
+                    </div>
+                    <div class="offer-card-icons">
+                        <img src="imgs/star.svg" alt="">
+                        <img src="imgs/bascket-offer.svg" alt="">
+                        <img src="imgs/cross-arrow.svg" alt="">
+                    </div>
+                </div>
+                <div class="offer-card">
+                    <div class="book-interface">
+                        <img src="imgs/book-1.svg" alt="">
+                    </div>
+                    <div class="offer-card-lable">
+                        <div><img src="imgs/lib-book-icon.svg" alt=""></div>
+                        <h4>كتاب إلكتروني</h4>
+                    </div>
+                    <div class="offer-book-name">تشامبل عندما يولد المرء مرتين</div>
+                    <div class="offer-book-cost">
+                        <p>
+                            <del><span class="cost"> 27.5</span></del>
+                            <span class="cost"> 17.99</span>ر.س.
+                        </p>
+                        <p class="Tax">شامل الضريبة</p>
+                        <p id="offer-counting4"></p>
+                    </div>
+                    <div class="offer-card-icons">
+                        <img src="imgs/star.svg" alt="">
+                        <img src="imgs/bascket-offer.svg" alt="">
+                        <img src="imgs/cross-arrow.svg" alt="">
+                    </div>
+                </div>
+                <div class="offer-card">
+                    <div class="book-interface">
+                        <img src="imgs/book-1.svg" alt="">
+                    </div>
+                    <div class="offer-card-lable">
+                        <div><img src="imgs/lib-book-icon.svg" alt=""></div>
+                        <h4>كتاب إلكتروني</h4>
+                    </div>
+                    <div class="offer-book-name">تشامبل عندما يولد المرء مرتين</div>
+                    <div class="offer-book-cost">
+                        <p>
+                            <del><span class="cost"> 27.5</span></del>
+                            <span class="cost"> 17.99</span>ر.س.
+                        </p>
+                        <p class="Tax">شامل الضريبة</p>
+                        <p id="offer-counting5"></p>
+                    </div>
+                    <div class="offer-card-icons">
+                        <img src="imgs/star.svg" alt="">
+                        <img src="imgs/bascket-offer.svg" alt="">
+                        <img src="imgs/cross-arrow.svg" alt="">
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- === END ECONOMIC BOOKS === -->
+
+        <!-- === COOKING BOOKS === -->
+        <section class="current-offers-container">
+            <div class="curr-offer-t">
+                <h2>الطبخ</h2>
+                <span><a href="#">عرض الكل</a></span>
+            </div>
+            <div class="current-offers">
+                <div class="offer-card">
+                    <div class="book-interface">
+                        <img src="imgs/book-1.svg" alt="">
+                    </div>
+                    <div class="offer-card-lable">
+                        <div><img src="imgs/lib-book-icon.svg" alt=""></div>
+                        <h4>كتاب إلكتروني</h4>
+                    </div>
+                    <div class="offer-book-name">تشامبل عندما يولد المرء مرتين</div>
+                    <div class="offer-book-cost">
+                        <p>
+                            <del><span class="cost"> 27.5</span></del>
+                            <span class="cost"> 17.99</span>ر.س.
+                        </p>
+                        <p class="Tax">شامل الضريبة</p>
+                        <p id="offer-counting1"></p>
+                    </div>
+                    <div class="offer-card-icons">
+                        <img src="imgs/star.svg" alt="">
+                        <img src="imgs/bascket-offer.svg" alt="">
+                        <img src="imgs/cross-arrow.svg" alt="">
+                    </div>
+                </div>
+                <div class="offer-card">
+                    <div class="book-interface">
+                        <img src="imgs/book-1.svg" alt="">
+                    </div>
+                    <div class="offer-card-lable">
+                        <div><img src="imgs/lib-book-icon.svg" alt=""></div>
+                        <h4>كتاب إلكتروني</h4>
+                    </div>
+                    <div class="offer-book-name">تشامبل عندما يولد المرء مرتين</div>
+                    <div class="offer-book-cost">
+                        <p>
+                            <del><span class="cost"> 27.5</span></del>
+                            <span class="cost"> 17.99</span>ر.س.
+                        </p>
+                        <p class="Tax">شامل الضريبة</p>
+                        <p id="offer-counting2"></p>
+                    </div>
+                    <div class="offer-card-icons">
+                        <img src="imgs/star.svg" alt="">
+                        <img src="imgs/bascket-offer.svg" alt="">
+                        <img src="imgs/cross-arrow.svg" alt="">
+                    </div>
+                </div>
+                <div class="offer-card">
+                    <div class="book-interface">
+                        <img src="imgs/book-1.svg" alt="">
+                    </div>
+                    <div class="offer-card-lable">
+                        <div><img src="imgs/lib-book-icon.svg" alt=""></div>
+                        <h4>كتاب إلكتروني</h4>
+                    </div>
+                    <div class="offer-book-name">تشامبل عندما يولد المرء مرتين</div>
+                    <div class="offer-book-cost">
+                        <p>
+                            <del><span class="cost"> 27.5</span></del>
+                            <span class="cost"> 17.99</span>ر.س.
+                        </p>
+                        <p class="Tax">شامل الضريبة</p>
+                        <p id="offer-counting3"></p>
+                    </div>
+                    <div class="offer-card-icons">
+                        <img src="imgs/star.svg" alt="">
+                        <img src="imgs/bascket-offer.svg" alt="">
+                        <img src="imgs/cross-arrow.svg" alt="">
+                    </div>
+                </div>
+                <div class="offer-card">
+                    <div class="book-interface">
+                        <img src="imgs/book-1.svg" alt="">
+                    </div>
+                    <div class="offer-card-lable">
+                        <div><img src="imgs/lib-book-icon.svg" alt=""></div>
+                        <h4>كتاب إلكتروني</h4>
+                    </div>
+                    <div class="offer-book-name">تشامبل عندما يولد المرء مرتين</div>
+                    <div class="offer-book-cost">
+                        <p>
+                            <del><span class="cost"> 27.5</span></del>
+                            <span class="cost"> 17.99</span>ر.س.
+                        </p>
+                        <p class="Tax">شامل الضريبة</p>
+                        <p id="offer-counting4"></p>
+                    </div>
+                    <div class="offer-card-icons">
+                        <img src="imgs/star.svg" alt="">
+                        <img src="imgs/bascket-offer.svg" alt="">
+                        <img src="imgs/cross-arrow.svg" alt="">
+                    </div>
+                </div>
+                <div class="offer-card">
+                    <div class="book-interface">
+                        <img src="imgs/book-1.svg" alt="">
+                    </div>
+                    <div class="offer-card-lable">
+                        <div><img src="imgs/lib-book-icon.svg" alt=""></div>
+                        <h4>كتاب إلكتروني</h4>
+                    </div>
+                    <div class="offer-book-name">تشامبل عندما يولد المرء مرتين</div>
+                    <div class="offer-book-cost">
+                        <p>
+                            <del><span class="cost"> 27.5</span></del>
+                            <span class="cost"> 17.99</span>ر.س.
+                        </p>
+                        <p class="Tax">شامل الضريبة</p>
+                        <p id="offer-counting5"></p>
+                    </div>
+                    <div class="offer-card-icons">
+                        <img src="imgs/star.svg" alt="">
+                        <img src="imgs/bascket-offer.svg" alt="">
+                        <img src="imgs/cross-arrow.svg" alt="">
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- === END COOKING BOOKS === -->
+
+        <!-- === ROMANCE BOOKS === -->
+        <section class="current-offers-container">
+            <div class="curr-offer-t">
+                <h2>أفضل الروايات الرومانسية</h2>
+                <span><a href="#">عرض الكل</a></span>
+            </div>
+            <div class="current-offers">
+                <div class="offer-card">
+                    <div class="book-interface">
+                        <img src="imgs/book-1.svg" alt="">
+                    </div>
+                    <div class="offer-card-lable">
+                        <div><img src="imgs/lib-book-icon.svg" alt=""></div>
+                        <h4>كتاب إلكتروني</h4>
+                    </div>
+                    <div class="offer-book-name">تشامبل عندما يولد المرء مرتين</div>
+                    <div class="offer-book-cost">
+                        <p>
+                            <del><span class="cost"> 27.5</span></del>
+                            <span class="cost"> 17.99</span>ر.س.
+                        </p>
+                        <p class="Tax">شامل الضريبة</p>
+                        <p id="offer-counting1"></p>
+                    </div>
+                    <div class="offer-card-icons">
+                        <img src="imgs/star.svg" alt="">
+                        <img src="imgs/bascket-offer.svg" alt="">
+                        <img src="imgs/cross-arrow.svg" alt="">
+                    </div>
+                </div>
+                <div class="offer-card">
+                    <div class="book-interface">
+                        <img src="imgs/book-1.svg" alt="">
+                    </div>
+                    <div class="offer-card-lable">
+                        <div><img src="imgs/lib-book-icon.svg" alt=""></div>
+                        <h4>كتاب إلكتروني</h4>
+                    </div>
+                    <div class="offer-book-name">تشامبل عندما يولد المرء مرتين</div>
+                    <div class="offer-book-cost">
+                        <p>
+                            <del><span class="cost"> 27.5</span></del>
+                            <span class="cost"> 17.99</span>ر.س.
+                        </p>
+                        <p class="Tax">شامل الضريبة</p>
+                        <p id="offer-counting2"></p>
+                    </div>
+                    <div class="offer-card-icons">
+                        <img src="imgs/star.svg" alt="">
+                        <img src="imgs/bascket-offer.svg" alt="">
+                        <img src="imgs/cross-arrow.svg" alt="">
+                    </div>
+                </div>
+                <div class="offer-card">
+                    <div class="book-interface">
+                        <img src="imgs/book-1.svg" alt="">
+                    </div>
+                    <div class="offer-card-lable">
+                        <div><img src="imgs/lib-book-icon.svg" alt=""></div>
+                        <h4>كتاب إلكتروني</h4>
+                    </div>
+                    <div class="offer-book-name">تشامبل عندما يولد المرء مرتين</div>
+                    <div class="offer-book-cost">
+                        <p>
+                            <del><span class="cost"> 27.5</span></del>
+                            <span class="cost"> 17.99</span>ر.س.
+                        </p>
+                        <p class="Tax">شامل الضريبة</p>
+                        <p id="offer-counting3"></p>
+                    </div>
+                    <div class="offer-card-icons">
+                        <img src="imgs/star.svg" alt="">
+                        <img src="imgs/bascket-offer.svg" alt="">
+                        <img src="imgs/cross-arrow.svg" alt="">
+                    </div>
+                </div>
+                <div class="offer-card">
+                    <div class="book-interface">
+                        <img src="imgs/book-1.svg" alt="">
+                    </div>
+                    <div class="offer-card-lable">
+                        <div><img src="imgs/lib-book-icon.svg" alt=""></div>
+                        <h4>كتاب إلكتروني</h4>
+                    </div>
+                    <div class="offer-book-name">تشامبل عندما يولد المرء مرتين</div>
+                    <div class="offer-book-cost">
+                        <p>
+                            <del><span class="cost"> 27.5</span></del>
+                            <span class="cost"> 17.99</span>ر.س.
+                        </p>
+                        <p class="Tax">شامل الضريبة</p>
+                        <p id="offer-counting4"></p>
+                    </div>
+                    <div class="offer-card-icons">
+                        <img src="imgs/star.svg" alt="">
+                        <img src="imgs/bascket-offer.svg" alt="">
+                        <img src="imgs/cross-arrow.svg" alt="">
+                    </div>
+                </div>
+                <div class="offer-card">
+                    <div class="book-interface">
+                        <img src="imgs/book-1.svg" alt="">
+                    </div>
+                    <div class="offer-card-lable">
+                        <div><img src="imgs/lib-book-icon.svg" alt=""></div>
+                        <h4>كتاب إلكتروني</h4>
+                    </div>
+                    <div class="offer-book-name">تشامبل عندما يولد المرء مرتين</div>
+                    <div class="offer-book-cost">
+                        <p>
+                            <del><span class="cost"> 27.5</span></del>
+                            <span class="cost"> 17.99</span>ر.س.
+                        </p>
+                        <p class="Tax">شامل الضريبة</p>
+                        <p id="offer-counting5"></p>
+                    </div>
+                    <div class="offer-card-icons">
+                        <img src="imgs/star.svg" alt="">
+                        <img src="imgs/bascket-offer.svg" alt="">
+                        <img src="imgs/cross-arrow.svg" alt="">
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- === END ROMANCE BOOKS === -->
 
     </main>
     <!--  ====== END MAIN SECTION ====== -->
@@ -364,20 +1135,31 @@
 
             <div class="lib-links">
                 <a href="#"><h3> تواصل معنا </h3></a>
-                <!-- <div class="social-icons">
-                    <a href="#"> <img src="imgs/facebook-icon.svg" alt="" class="soci-icon"> </a>
-                    <a href="#"> <img src="imgs/twitter-icon.svg" alt="" class="soci-icon"> </a>
-                    <a href="#"> <img src="imgs/youtube-icon.svg" alt="" class="soci-icon"> </a>
-                    <a href="#"> <img src="imgs/instagram.svg" alt="" class="soci-icon"> </a>
-                    <a href="#"> <img src="imgs/linkedIn-icon.svg" alt="" class="soci-icon"> </a>
-                    <a href="#"> <img src="imgs/snap-icon.svg" alt="" class="soci-icon"> </a>
-                    <a href="#"> <img src="imgs/tiktok-icon.svg" alt="" class="soci-icon"> </a>
-                </div> -->
+                <div class="social-icons">
+                    <a href="https://www.facebook.com/jarirbookstore"> <img src="imgs/facebook-icon.svg" alt="" class="soci-icon"> </a>
+                    <a href="https://twitter.com/jarirbookstore"> <img src="imgs/twitter-icon.svg" alt="" class="soci-icon"> </a>
+                    <a href="https://www.youtube.com/user/jarirtube"> <img src="imgs/youtube-icon.svg" alt="" class="soci-icon"> </a>
+                    <a href="https://www.instagram.com/accounts/login/"> <img src="imgs/instagram.svg" alt="" class="soci-icon"> </a>
+                    <a href="https://www.linkedin.com/company/jarir-bookstore"> <img src="imgs/linkedIn-icon.svg" alt="" class="soci-icon"> </a>
+                    <a href="https://www.snapchat.com/add/jarirbookstore"> <img src="imgs/snap-icon.svg" alt="" class="soci-icon"> </a>
+                    <a href="#"> <img src="imgs/tiktok-icon.svg" alt="#" class="soci-icon"> </a>
+                </div>
             </div>
         </div>
 
         <div class="footer-2nd">
-
+            <div class="sponsor-icons">
+                <img src="imgs/amex.webp" alt="">
+                <img src="imgs/mastercard.webp" alt="">
+                <img src="imgs/visa.webp" alt="">
+                <img src="imgs/mada.webp" alt="">
+                <img src="imgs/qitaf.webp" alt="">
+                <img src="imgs/prepayatshowroom.webp" alt="">
+            </div>
+            <div class="policy">
+                <p><a href="#">سياسة الخصوصية</a> | <a href="#">شروط الخدمة</a></p>
+                <p>.جميع الحقوق محفوظة لمكتبة جرير &copy; 2015. س.ت. 1010032264. اونلاين س.ت. 1010654213</p>
+            </div>
         </div>
     </footer>
     <!--  ====== END FOOTER ====== -->

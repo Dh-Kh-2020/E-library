@@ -52,16 +52,44 @@ const updatedTime = setInterval(function(){
 }, 1000);
 
 function search_books() {
-  let input = document.getElementById('search_box').value
+  // console.log("ksjdhfksdhfklshdkfh");
+  let input = document.getElementById('search_box').value;
   input=input.toLowerCase();
-  let book = document.getElementsByClassName('books');
+  console.log(input);
+  let book = document.getElementsByClassName('offer-book-name');
     
-  for (i = 0; i < book.length; i++) { 
-      if (!book[i].alt.toLowerCase().includes(input)) {
-          book[i].style.display="none";
+  for (i = 0; i < book.length; i++) {
+    let parent = book[i].parentElement; 
+    // console.log("text");
+      if (!book[i].innerText.toLowerCase().includes(input)) {
+          parent.style.display="none";
       }
       else {
-          book[i].style.display="list-item";                 
+          parent.style.display="list-item";                 
       }
   }
+}
+
+// SLIDER 
+var slideIndex = 0;
+slideShow();
+
+function slideShow(){
+  var i;
+  var slides = document.getElementsByClassName("slider");
+  var slide_nav = document.getElementsByClassName("slider__nav");
+  for(i = 0; i < slides.length; i++){
+    slides[i].style.display = "none";
+  }
+  for( i = 0; i < slide_nav.length; i++){
+    slide_nav[i].className = slide_nav[i].className.replace("active", "");
+  }
+  slideIndex++;
+  if(slideIndex > slides.length){
+    slideIndex = 1;
+  }
+  slides[slideIndex - 1].style.display = "block";
+  // slide_nav[slideIndex - 1].className += "active";
+  slide_nav[slideIndex - 1].classList.toggle("active");
+  setTimeout(slideShow, 2000);
 }

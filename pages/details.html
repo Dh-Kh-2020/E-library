@@ -19,7 +19,7 @@
     <title>E-library</title>
 </head>
 <body>
-     <!-- ====== HEADER ====== -->
+    <!-- ====== HEADER ====== -->
     <header>
         <nav class="main-nav">
             <!-- Trigger opening the Modal -->
@@ -29,6 +29,7 @@
                     <!-- Modal content -->
                     <div class="modal-content">
                         <span class="close">&times;</span>
+                        <!-- login form -->
                         <div class="login-container">
                             <h1>تسجيل الدخول</h1>
                             <div class="login-form-container">
@@ -49,7 +50,7 @@
                         <div class="have-account">
                             <p>ليس لديك حساب؟</p>
                             <a href="#">
-                                <button>إنشاء حساب جديد</button>
+                                <button id="myBtn-2">إنشاء حساب جديد</button>
                             </a>
                         </div>
                     </div>
@@ -76,7 +77,7 @@
                         </div>
                     </form>
                 </div>
-                <div class="bascket-btn"><i class="fas fa-cart-arrow-down bascket-icon"></i></div>
+                <div class="bascket-btn"><a href="pages/bascket.html"><i class="fas fa-cart-arrow-down bascket-icon"></i></a></div>
             </div>
         </div>
     </header>
@@ -84,8 +85,57 @@
 
     <!--  ====== MAIN SECTION ====== -->
     <main>
-        
-    </main>
+        <!-- === SLIDER BANNER === -->
+        <!-- <section class="slider-container">
+            <div class="slider"> 
+                <div class="slides">
+                    <img src="imgs/slider.png" alt="" class="slide__img">
+                    <img src="imgs/MB-ksa-1301-office-bags-50percent-discount-ar.jpg" alt="" class="slide__img">
+                    <img src="imgs/MB-ksa-1201-samsung_s21fe_5g_trade_in-ar.jpg" alt="" class="slide__img">
+                    <img src="imgs/MB-ksa-1601-huawei-watch-gt-runner-po-ar.jpg" alt="" class="slide__img">
+                </div>
+                <div class="slider__nav">
+                    <a class="slider__navlink" href="#slides__1"></a>
+                    <a class="slider__navlink" href="#slides__2"></a>
+                    <a class="slider__navlink" href="#slides__3"></a>
+                    <a class="slider__navlink" href="#slides__4"></a>
+                </div>
+            </div> 
+        </section> -->
+        <section class="slider-container">
+            <div class="slider">
+                <div class="slides">
+                    <div id="slides__1" class="slide">
+                        <img src="../imgs/slider.png" alt="" class="slide__img">
+                        <a class="slide__prev" href="#slides__4" title="Next"></a>
+                        <a class="slide__next" href="#slides__2" title="Next"></a>
+                    </div>
+                    <div id="slides__2" class="slide">
+                        <img src="../imgs/MB-ksa-1301-office-bags-50percent-discount-ar.jpg" alt="" class="slide__img">
+                        <a class="slide__prev" href="#slides__1" title="Prev"></a>
+                        <a class="slide__next" href="#slides__3" title="Next"></a>
+                    </div>
+                    <div id="slides__3" class="slide">
+                        <img src="../imgs/MB-ksa-1201-samsung_s21fe_5g_trade_in-ar.jpg" alt="" class="slide__img">
+                        <a class="slide__prev" href="#slides__2" title="Prev"></a>
+                        <a class="slide__next" href="#slides__4" title="Next"></a>
+                    </div>
+                    <div id="slides__4" class="slide">
+                        <img src="../imgs/MB-ksa-1601-huawei-watch-gt-runner-po-ar.jpg" alt="" class="slide__img">
+                        <a class="slide__prev" href="#slides__3" title="Prev"></a>
+                        <a class="slide__next" href="#slides__1" title="Prev"></a>
+                    </div>
+                </div>
+                <div class="slider__nav">
+                    <a class="slider__navlink" href="#slides__1"></a>
+                    <a class="slider__navlink" href="#slides__2"></a>
+                    <a class="slider__navlink" href="#slides__3"></a>
+                    <a class="slider__navlink" href="#slides__4"></a>
+                </div>
+            </div>
+        </section>
+        <!-- === END SLIDER BANNER === -->
+
     <!--  ====== END MAIN SECTION ====== -->
 
     <!--  ====== FOOTER ====== -->
@@ -153,20 +203,31 @@
 
             <div class="lib-links">
                 <a href="#"><h3> تواصل معنا </h3></a>
-                <!-- <div class="social-icons">
-                    <a href="#"> <img src="imgs/facebook-icon.svg" alt="" class="soci-icon"> </a>
-                    <a href="#"> <img src="imgs/twitter-icon.svg" alt="" class="soci-icon"> </a>
-                    <a href="#"> <img src="imgs/youtube-icon.svg" alt="" class="soci-icon"> </a>
-                    <a href="#"> <img src="imgs/instagram.svg" alt="" class="soci-icon"> </a>
-                    <a href="#"> <img src="imgs/linkedIn-icon.svg" alt="" class="soci-icon"> </a>
-                    <a href="#"> <img src="imgs/snap-icon.svg" alt="" class="soci-icon"> </a>
-                    <a href="#"> <img src="imgs/tiktok-icon.svg" alt="" class="soci-icon"> </a>
-                </div> -->
+                <div class="social-icons">
+                    <a href="https://www.facebook.com/jarirbookstore"> <img src="../imgs/facebook-icon.svg" alt="" class="soci-icon"> </a>
+                    <a href="https://twitter.com/jarirbookstore"> <img src="../imgs/twitter-icon.svg" alt="" class="soci-icon"> </a>
+                    <a href="https://www.youtube.com/user/jarirtube"> <img src="../imgs/youtube-icon.svg" alt="" class="soci-icon"> </a>
+                    <a href="https://www.instagram.com/accounts/login/"> <img src="../imgs/instagram.svg" alt="" class="soci-icon"> </a>
+                    <a href="https://www.linkedin.com/company/jarir-bookstore"> <img src="../imgs/linkedIn-icon.svg" alt="" class="soci-icon"> </a>
+                    <a href="https://www.snapchat.com/add/jarirbookstore"> <img src="../imgs/snap-icon.svg" alt="" class="soci-icon"> </a>
+                    <a href="#"> <img src="../imgs/tiktok-icon.svg" alt="#" class="soci-icon"> </a>
+                </div>
             </div>
         </div>
 
         <div class="footer-2nd">
-
+            <div class="sponsor-icons">
+                <img src="../imgs/amex.webp" alt="">
+                <img src="../imgs/mastercard.webp" alt="">
+                <img src="../imgs/visa.webp" alt="">
+                <img src="../imgs/mada.webp" alt="">
+                <img src="../imgs/qitaf.webp" alt="">
+                <img src="../imgs/prepayatshowroom.webp" alt="">
+            </div>
+            <div class="policy">
+                <p><a href="#">سياسة الخصوصية</a> | <a href="#">شروط الخدمة</a></p>
+                <p>.جميع الحقوق محفوظة لمكتبة جرير &copy; 2015. س.ت. 1010032264. اونلاين س.ت. 1010654213</p>
+            </div>
         </div>
     </footer>
     <!--  ====== END FOOTER ====== -->

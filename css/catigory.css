@@ -1,8 +1,17 @@
 #books-list{
     font-size:  1.5em;
     margin-left: 90px;
-   }
+    display: flex;
+    justify-content: center;
+    border: 1px red solid;
+    flex-shrink: 4;
+    flex-wrap: wrap;
+    width: 70vw;
+    /* float: left; */
+    margin-right: 26.5%;
+}
  
-.books{
-   display: list-item;    
+.offer-card{
+   display: list-item;   
+   list-style: none; 
   } 
