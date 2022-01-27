@@ -1,25 +1,51 @@
-// ======= Modal login ========
+// // ======= Modal login ========
 
-const modal = document.getElementById("myModal");  // Get the modal
-const btn = document.getElementById("myBtn");      // Get the button that opens the modal
-const span = document.getElementsByClassName("close")[0];    // Get the <span> element that closes the modal
+// const modal = document.getElementById("myModal");  // Get the modal
+// const btn = document.getElementById("myBtn");      // Get the button that opens the modal
+// const span = document.getElementsByClassName("close")[0];    // Get the <span> element that closes the modal
 
-// When the user clicks the button, open the modal 
-btn.onclick = function() {
-  modal.style.display = "block";
-}
+// // When the user clicks the button, open the modal 
+// btn.onclick = function() {
+//   modal.style.display = "block";
+// }
 
-// When the user clicks on <span> (x), close the modal
-span.onclick = function() {
-  modal.style.display = "none";
-}
+// // When the user clicks on <span> (x), close the modal
+// span.onclick = function() {
+//   modal.style.display = "none";
+// }
 
-// When the user clicks anywhere outside of the modal, close it
-window.onclick = function(event) {
-  if (event.target == modal) {
-    modal.style.display = "none";
-  }
-}
+// // When the user clicks anywhere outside of the modal, close it
+// window.onclick = function(event) {
+//   if (event.target == modal) {
+//     modal.style.display = "none";
+//   }
+// }
+
+// Login Modal
+const login           = document.getElementById("login");
+const register        = document.getElementById("register");
+const close__login    = document.getElementById("close__login");
+const close__register = document.getElementById("close__register");
+
+const model__login    = document.getElementById("model__login");
+const model__register = document.getElementById("model__register");
+
+login.addEventListener('click' , ()=>{
+    model__login.style.display = "block";
+});
+
+register.addEventListener('click' , ()=>{
+    model__login.style.display    = "none";
+    model__register.style.display = "block";
+});
+
+close__register.addEventListener('click' , ()=>{
+    model__register.style.display = "none";
+})
+
+close__login.addEventListener('click' , ()=>{
+    model__login.style.display    = "none";
+})
 
 // ======= Offer Down Counter =======
 
@@ -70,26 +96,3 @@ function search_books() {
   }
 }
 
-// SLIDER 
-var slideIndex = 0;
-slideShow();
-
-function slideShow(){
-  var i;
-  var slides = document.getElementsByClassName("slider");
-  var slide_nav = document.getElementsByClassName("slider__nav");
-  for(i = 0; i < slides.length; i++){
-    slides[i].style.display = "none";
-  }
-  for( i = 0; i < slide_nav.length; i++){
-    slide_nav[i].className = slide_nav[i].className.replace("active", "");
-  }
-  slideIndex++;
-  if(slideIndex > slides.length){
-    slideIndex = 1;
-  }
-  slides[slideIndex - 1].style.display = "block";
-  // slide_nav[slideIndex - 1].className += "active";
-  slide_nav[slideIndex - 1].classList.toggle("active");
-  setTimeout(slideShow, 2000);
-}

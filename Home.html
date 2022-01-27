@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" dir="rtl">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,7 +7,10 @@
 
     <!-- ===== CSS SELF SHEETS ===== -->
     <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="css/login.css">
+    <!-- <link rel="stylesheet" href="css/login.css">
+    <link rel="stylesheet" href="css/signup.css"> -->
+    <link rel="stylesheet" href="css/model.css">
+    <link rel="stylesheet" href="css/responsive.css">
 
     <!-- ===== FONT AWSOME ===== -->
     <link rel="stylesheet" href="css/all.min.css">
@@ -23,27 +26,22 @@
     <header>
         <nav class="main-nav">
             <!-- Trigger opening the Modal -->
-            <a href="#" class="signup-now" id="myBtn" ><span class="nav-icons"><i class="fas fa-user"></i></span> ادخل لحسابك أو سجل الآن </a>
-                <!-- The Modal -->    
-                <div id="myModal" class="modal">
+            <a href="#" class="signup-now" id="login" ><span class="nav-icons"><i class="fas fa-user"></i></span> ادخل لحسابك أو سجل الآن </a>
+                <!-- The Modal id="myBtn"-->    
+                <!-- <div id="myModal" class="modal"> -->
                     <!-- Modal content -->
-                    <div class="modal-content">
-                        <span class="close">&times;</span>
+                    <!-- <div class="modal-content">
+                        <span class="close">&times;</span> -->
                         <!-- login form -->
-                        <div class="login-container">
+                        <!-- <div class="login-container">
                             <h1>تسجيل الدخول</h1>
                             <div class="login-form-container">
-                                <form action="">
-                                    <!-- <div> -->
+                                <form action=""> 
                                         <input type="email" name="email" id="email" class="email" placeholder="البريد الإلكتروني أو رقم الجوال">
-                                    <!-- </div>
-                                    <div> -->
+                                   
                                         <input type="password" name="password" id="password" class="password" placeholder="كلمة السر">
                                         <span>نسيت؟</span>
-                                    <!-- </div>
-                                    <div> -->
                                         <input type="submit" value="تسجيل الدخول">
-                                    <!-- </div> -->
                                 </form>
                             </div>
                         </div>
@@ -52,6 +50,88 @@
                             <a href="#">
                                 <button id="myBtn-2">إنشاء حساب جديد</button>
                             </a>
+                        </div>
+                    </div>
+                </div>    -->
+                <!-- login model -->
+                <div class="model" id="model__login">
+                    <div class="model__container">
+                        <h1 class="model__title">تسجيل الدخول</h1>
+                        <a id="close__login"><span class="close">&times;</span></a>
+                        <div class="model__item">
+                            <form action="" class="model__form">
+                                <div class="model__input">
+                                    <label for="email">البريد الإلكتروني أو رقم الجوال</label>
+                                    <input type="text" name="" id="email" >
+                                </div>
+                                <div class="model__input">
+                                    <label for="oassword">كلمة السر</label>
+                                    <input type="password" name="" id="password" >
+                                </div>
+                                <a href="#" class="model__link">نسيت؟</a>
+                                <button class="btn btn--red btn--md">تسجيل الدخول</button>
+                            </form>
+                            <label class="model__label" for="register">ليس لديك حساب؟</label>
+                            <button class="btn btn-hov" id="register">إنشاء حساب جديد</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- SIGNUP MODAL -->
+                <div class="model model--top" id="model__register">
+                    <div class="model__container">
+                        <h1 class="model__title">إنشاء حساب </h1>
+                        <a id="close__register"><span class="close">&times;</span></a>
+                        <div class="model__item">
+                            <form action="" class="model__form">
+                                <div class="model__phone">
+                                    <div class="model__input">
+                                        <label for="phone">رقم الجوال</label>
+                                        <input type="text" name="" id="phone" >
+                                    </div>
+                                    <div>
+                                        <label for="country">رمز البلد</label>
+                                        <select name="" id="country">
+                                            <option value=""><img src="assets/images/icon/country.svg">+967</option>
+                                            <option value="">+970</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <p>سوف نرسل لك <b>رمز التحقق عن طريق رسالة نصية</b></p>
+                                <button class="btn btn--md btn--darkgray btn--no-bottom">إرسال رمز التحقق</button>
+                                <div class="model__input">
+                                    <label for="first-name">الاسم الاول</label>
+                                    <input type="text" name="" id="first-name" >
+                                </div>
+                                <div class="model__input">
+                                    <label for="last-name">اسم العائلة</label>
+                                    <input type="text" name="" id="last-name" >
+                                </div>
+                                <div class="model__input">
+                                    <label for="email">البريد الإلكتروني</label>
+                                    <input type="email" name="" id="email" >
+                                </div>
+                                <div class="model__input">
+                                    <label for="conferm-email">تأكيد البريد الإلكتروني</label>
+                                    <input type="text" name="" id="conferm-email" >
+                                </div>
+                                <div class="model__input">
+                                    <label for="password">كلمة السر</label>
+                                    <input type="password" name="" id="password" >
+                                </div>
+                                <div class="model__policy">
+                                    <div>
+                                        <input type="checkbox">
+                                        <label for="">أوافق على</label><a href="#">الشروط والأحكام</a>
+                                    </div>
+                                    <div>
+                                        <input type="checkbox">
+                                        <label for="">التسجيل للإنضمام للنشرة البريدية</label>
+                                    </div>
+                                </div>
+                                <button class="btn btn--md btn--darkgray">إنشاء الحساب</button>
+                            </form>
+                            <label class="model__label" for="register"> لديك حساب؟ تسجيل الدخول</label>
                         </div>
                     </div>
                 </div>    
@@ -64,7 +144,7 @@
                 <img src="imgs/flag-round-250.svg" alt="" class="nav-icons"> 
                 اليمن YER 
             </a>
-            <a href="#">English <span class="nav-icons"><i class="fas fa-language"></i></span></a>
+            <a href="#" class="change-language">English <span class="nav-icons"><i class="fas fa-language"></i></span></a>
         </nav>
         <div class="header-wrapper">
             <div class="logo"><img src="imgs/logo.png" alt=""></div>
@@ -87,39 +167,28 @@
     <main>
         <!-- === SLIDER BANNER === -->
         <section class="slider-container">
-            <div class="slider">
-                <img src="imgs/slider.png" alt="">
-                <!-- <a class="slide__prev" href="#slides__4" title="Next"></a>
-                <a class="slide__next" href="#slides__2" title="Next"></a> -->
-            </div>
-            <div class="slider">
-                <img src="imgs/MB-ksa-1301-office-bags-50percent-discount-ar.jpg" alt="">
-                <!-- <a class="slide__prev" href="#slides__1" title="Prev"></a>
-                <a class="slide__next" href="#slides__3" title="Next"></a> -->
-            </div>
-            <div class="slider">
-                <img src="imgs/MB-ksa-1201-samsung_s21fe_5g_trade_in-ar.jpg" alt="">
-                <!-- <a class="slide__prev" href="#slides__2" title="Prev"></a>
-                <a class="slide__next" href="#slides__4" title="Next"></a> -->
-            </div>
-            <div class="slider">
-                <img src="imgs/MB-ksa-1601-huawei-watch-gt-runner-po-ar.jpg" alt="">
-                <!-- <a class="slide__prev" href="#slides__3" title="Prev"></a>
-                <a class="slide__next" href="#slides__1" title="Prev"></a> -->
-            </div>   
+            <img src="imgs/slider.png" class="slider" data-index="1">
+            <img src="imgs/MB-ksa-1301-office-bags-50percent-discount-ar.jpg" class="slider" data-index="2">
+            <img src="imgs/MB-ksa-1201-samsung_s21fe_5g_trade_in-ar.jpg" class="slider" data-index="3">
+            <img src="imgs/MB-ksa-1601-huawei-watch-gt-runner-po-ar.jpg" class="slider" data-index="4">
         </section>
+        <a id="arrow-right" onclick="plusSlides(1)">❮</a>
+        <a id="arrow-left" onclick="plusSlides(-1)">❯</a>
         <div class="slider__nav-container">
-            <span class="slider__nav"> </span>
-            <span class="slider__nav"> </span>
-            <span class="slider__nav"> </span>
-            <span class="slider__nav"> </span>
-        </div>
+            <span class="slider__nav" onclick="currentSlide(1)"></span>
+            <span class="slider__nav" onclick="currentSlide(2)"></span>
+            <span class="slider__nav" onclick="currentSlide(3)"></span>
+            <span class="slider__nav" onclick="currentSlide(4)"></span>
+        </div>   
         <!-- === END SLIDER BANNER === -->
 
         <!-- === SECTIONS VIEWER === -->
         <section class="section-viewing-container">
             <a href="pages/category.html"><h2>تصفح حسب القسم</h2></a>
             <div class="section-veiwer">
+                <div class="category__prev">
+                    <a><img src="imgs/arrow.svg" alt="السابق"></a>
+                </div>
                 <div class="section-card">
                     <div class="section-icon"><img src="imgs/dinn.svg" alt="relagin"></div>
                     <div class="section-title">
@@ -162,12 +231,10 @@
                         <h3 class="education">تربية</h3>
                     </div>
                 </div>
+                <div class="category__next">
+                    <a><img src="imgs/arrow.svg" class="category__arrow--next" alt="التالي"></a>
+                </div>
             </div>
-
-            <!-- <div class="sec-slider">
-                <a href="#" class="prev-sec"></a>
-                <a href="#" class="next-sec"></a>
-            </div> -->
         </section>
         <!-- === END SECTIONS VIEWER === -->
 
@@ -1165,5 +1232,7 @@
     <!--  ====== END FOOTER ====== -->
 
     <script src="js/main.js"></script>
+    <script src="js/slide.js"></script>
+    <script src="js/changeLang.js"></script>
 </body>
 </html>
