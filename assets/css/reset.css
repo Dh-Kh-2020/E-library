@@ -9,7 +9,7 @@
 :root{
     direction: rtl;
     font-family: 'Tajawal', 'Poppins', 'Work Sans', sans-serif;
-    --body-bg-color: #fff;
+    --body-bg-color: hsl(0, 0%, 100%);
     --main-nav-text: #42526e;
     --footer-1sr-bg: #333;
     --footer-2nd-bg: #e6e6e6;

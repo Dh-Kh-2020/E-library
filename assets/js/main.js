@@ -24,6 +24,7 @@
 // Login Modal
 const login           = document.getElementById("login");
 const register        = document.getElementById("register");
+
 const close__login    = document.getElementById("close__login");
 const close__register = document.getElementById("close__register");
 
@@ -46,6 +47,7 @@ close__register.addEventListener('click' , ()=>{
 close__login.addEventListener('click' , ()=>{
     modal__login.style.display    = "none";
 })
+
 
 // ======= Offer Down Counter =======
 
