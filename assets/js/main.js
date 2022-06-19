@@ -27,24 +27,24 @@ const register        = document.getElementById("register");
 const close__login    = document.getElementById("close__login");
 const close__register = document.getElementById("close__register");
 
-const model__login    = document.getElementById("model__login");
-const model__register = document.getElementById("model__register");
+const modal__login    = document.getElementById("modal__login");
+const modal__register = document.getElementById("modal__register");
 
 login.addEventListener('click' , ()=>{
-    model__login.style.display = "block";
+    modal__login.style.display = "block";
 });
 
 register.addEventListener('click' , ()=>{
-    model__login.style.display    = "none";
-    model__register.style.display = "block";
+    modal__login.style.display    = "none";
+    modal__register.style.display = "block";
 });
 
 close__register.addEventListener('click' , ()=>{
-    model__register.style.display = "none";
+    modal__register.style.display = "none";
 })
 
 close__login.addEventListener('click' , ()=>{
-    model__login.style.display    = "none";
+    modal__login.style.display    = "none";
 })
 
 // ======= Offer Down Counter =======

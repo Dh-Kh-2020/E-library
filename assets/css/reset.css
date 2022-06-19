@@ -1,0 +1,21 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Tajawal:wght@300;400;500;700&family=Work+Sans:ital,wght@0,100;0,200;0,500;0,700;0,800;1,100;1,400&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    direction: rtl;
+    font-family: 'Tajawal', 'Poppins', 'Work Sans', sans-serif;
+    --body-bg-color: #fff;
+    --main-nav-text: #42526e;
+    --footer-1sr-bg: #333;
+    --footer-2nd-bg: #e6e6e6;
+    --footer-1st-text: #a6a6a6;
+    --footer-2nd-text: #333;
+    --sectin-h2-color: #5e2f26;
+    --offers-h2-color: #3c4858;
+    /* --sec-titl-color: ; */
+}
