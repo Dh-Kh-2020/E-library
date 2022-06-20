@@ -17,7 +17,7 @@ window.addEventListener('click', function(event) {
     var log_modal = document.getElementById('login__modal');
 
     if (event.target == log_modal) {
-        modal.style.display = "none";
+        log_modal.style.display = "none";
     }
 });
 
