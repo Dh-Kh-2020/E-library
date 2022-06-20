@@ -14,6 +14,7 @@
 
 .modal .modal__container{
     background-color: var(--body-bg-color);
+    position: relative;     /* to implement Animation well */
     margin: auto;
     padding: 16px 0;
     width: 40%;
@@ -28,22 +29,24 @@
 .modal .modal__container .modal__header{
     display: flex;
     justify-content: center;
+    align-items: center;
     border-bottom: 2px solid #eff2f7;
+    padding-block-end: 12px;
+    /* border-top: 1px solid red;
+    border-left: 1px solid red;
+    border-right: 1px solid red; */
+    /* font-size: 20px; */
 }
 
 .modal .modal__container .modal__header .modal__title{
-    /* padding-bottom: 12px; */
     width: 90%;
-    font-size: 20px;
+    font-size: larger;
 }
 
 /* The Close Button */
 .modal .modal__container .modal__header .close {
-    color: #aaaaaa;
-    font-size: 28px;
-    font-weight: bold;
-    float: left;
-    border: 1px solid blue;
+    color: var(--light-gray-color);
+    font-size: larger;
 }
 
 .modal .modal__container .modal__header .close:hover,
