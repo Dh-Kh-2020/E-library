@@ -1,0 +1,66 @@
+                            /* ==================== MODAL ==================== */
+.modal{
+    display: none;
+    width: 100%;
+    height: 100%;
+    z-index: 999;
+    position: fixed;
+    padding-top: 100px; /* Location of the box */
+    left: 0;
+    top: 0;
+    overflow-y: auto;     /* Enable scroll if needed */
+    background-color: rgba(0,0,0,0.5); 
+}
+
+.modal .modal__container{
+    background-color: var(--body-bg-color);
+    margin: auto;
+    padding: 16px 0;
+    width: 40%;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
+    text-align: center;
+    animation-name: animatetop;
+    animation-duration: 0.4s;
+    -webkit-animation-name: animatetop;
+    -webkit-animation-duration: 0.4s;
+}
+
+.modal .modal__container .modal__header{
+    display: flex;
+    justify-content: center;
+    border-bottom: 2px solid #eff2f7;
+}
+
+.modal .modal__container .modal__header .modal__title{
+    /* padding-bottom: 12px; */
+    width: 90%;
+    font-size: 20px;
+}
+
+/* The Close Button */
+.modal .modal__container .modal__header .close {
+    color: #aaaaaa;
+    font-size: 28px;
+    font-weight: bold;
+    float: left;
+    border: 1px solid blue;
+}
+
+.modal .modal__container .modal__header .close:hover,
+.modal .modal__container .modal__header .close:focus {
+    color: var(--red-color);
+    text-decoration: none;
+    cursor: pointer;
+}
+
+/* Add Animation */
+@-webkit-keyframes animatetop {
+    from {top:-300px; opacity:0} 
+    to {top:0; opacity:1}
+}
+
+@keyframes animatetop {
+    from {top:-300px; opacity:0}
+    to {top:0; opacity:1}
+}
+

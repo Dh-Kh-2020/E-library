@@ -17,5 +17,10 @@
     --footer-2nd-text: #333;
     --sectin-h2-color: #5e2f26;
     --offers-h2-color: #3c4858;
+    --red-color: hsl(358, 95%, 43%);
     /* --sec-titl-color: ; */
+}
+
+body{
+    background-color: var(--body-bg-color);
 }

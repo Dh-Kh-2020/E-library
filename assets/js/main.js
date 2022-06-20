@@ -1,4 +1,4 @@
-// // ======= Modal login ========
+// ======= Modal login ========
 
 // const modal = document.getElementById("myModal");  // Get the modal
 // const btn = document.getElementById("myBtn");      // Get the button that opens the modal
@@ -47,7 +47,6 @@ close__register.addEventListener('click' , ()=>{
 close__login.addEventListener('click' , ()=>{
     modal__login.style.display    = "none";
 })
-
 
 // ======= Offer Down Counter =======
 
