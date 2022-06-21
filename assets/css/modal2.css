@@ -138,12 +138,6 @@
     cursor: pointer;
 }
 
-/* .modal .modal__container .modal__content .modal__form .modal__input .btn--login:hover{
-    background-color: var(--red-color);
-    color: var(--wight-color);
-    background: var(--main-nav-color);
-} */
-
 .modal .modal__container .modal__content > p{
     margin-block: 20px 10px;
     font-weight: 500;
@@ -164,11 +158,11 @@
     -moz-border-radius: 4px;
     -ms-border-radius: 4px;
     -o-border-radius: 4px;
+    cursor: pointer;
     transition: .4s ease-in-out;
 }
 
 .modal__content .btn__to-registe:hover{
     color: var(--wight-color);
     background: var(--main-nav-color);
-    cursor: pointer;
 }
