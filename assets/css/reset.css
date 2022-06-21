@@ -35,3 +35,19 @@ body{
 a{
     text-decoration: none;
 }
+
+.outline-0{
+    outline: none;
+}
+
+.border-0{
+    border: none;
+}
+
+.radius-4{
+    border-radius: 4px;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    -ms-border-radius: 4px;
+    -o-border-radius: 4px;
+}
