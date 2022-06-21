@@ -11,17 +11,25 @@
     font-family: 'Tajawal', 'Poppins', 'Work Sans', sans-serif;
     --body-bg-color: hsl(0, 0%, 100%);
     --main-nav-text: #42526e;
+    --form-lable-color:hsl(213, 12%, 64%);
+    --form-input-background: hsl(218, 33%, 95%);
     --footer-1sr-bg: #333;
     --footer-2nd-bg: #e6e6e6;
     --footer-1st-text: #a6a6a6;
     --footer-2nd-text: #333;
     --sectin-h2-color: #5e2f26;
     --offers-h2-color: #3c4858;
+
     --red-color: hsl(358, 95%, 43%);
     --light-gray-color: hsl(0, 0%, 60%);
+    --blue-color: hsl(218, 62%, 46%);
     /* --sec-titl-color: ; */
 }
 
 body{
     background-color: var(--body-bg-color);
+}
+
+a{
+    text-decoration: none;
 }

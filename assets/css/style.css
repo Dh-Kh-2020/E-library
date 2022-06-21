@@ -36,7 +36,7 @@ header{
 }
 
 .main-nav a{
-    border-right: 1px solid #e5e9f2;
+    /* border-right: 1px solid #e5e9f2; */
     /* border-bottom: 1px solid #e5e9f2;
     border-left: 1px solid #e5e9f2; */
     padding: 5px 20px;

@@ -80,7 +80,7 @@
     position: relative;
     top: -45px;
     left: -23px;
-    color: #2c61bd;
+    color: hsl(218, 62%, 46%);
     font-weight: 600;
 }
 
@@ -178,7 +178,7 @@
 .modal .modal__policy > div > a{
     position: static;
     text-align: right;
-    color: #0052cc;
+    color: hsl(216, 100%, 40%);
     margin-right: 5px;
 }
 
