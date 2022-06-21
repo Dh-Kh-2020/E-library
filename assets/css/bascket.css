@@ -10,7 +10,7 @@
     direction: rtl;
     font-family: 'Tajawal', 'Poppins', 'Work Sans', sans-serif;
     --body-bg-color: #fff;
-    --main-nav-text: #42526e;
+    --main-nav-color: #42526e;
     --footer-1sr-bg: #333;
     --footer-2nd-bg: #e6e6e6;
     --footer-1st-text: #a6a6a6;
@@ -79,7 +79,7 @@ ul{
     /* padding-left: 10px; */
     font-size: 1.625rem;
     font-weight: 700;
-    color: var(--main-nav-text);
+    color: var(--main-nav-color);
 }
 
 .num-of-bought-products{

@@ -42,7 +42,7 @@ header{
     padding: 5px 20px;
     font-size: 0.9rem;
     /* font-weight: 700; */
-    color: var(--main-nav-text);
+    color: var(--main-nav-color);
     /* display: inline-block;
     text-align: center; */
 }
@@ -112,7 +112,7 @@ input[type="search"]::placeholder{
 }
 
 .bascket-icon{
-    color: var(--main-nav-text);
+    color: var(--main-nav-color);
     font-size: 1.2rem;
 }
 

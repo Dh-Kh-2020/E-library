@@ -9,8 +9,9 @@
 :root{
     direction: rtl;
     font-family: 'Tajawal', 'Poppins', 'Work Sans', sans-serif;
+    --main-font: 'Tajawal', 'Poppins', 'Work Sans', sans-serif;
     --body-bg-color: hsl(0, 0%, 100%);
-    --main-nav-text: #42526e;
+    --main-nav-color: #42526e;
     --form-lable-color:hsl(213, 12%, 64%);
     --form-input-background: hsl(218, 33%, 95%);
     --footer-1sr-bg: #333;
@@ -23,6 +24,7 @@
     --red-color: hsl(358, 95%, 43%);
     --light-gray-color: hsl(0, 0%, 60%);
     --blue-color: hsl(218, 62%, 46%);
+    --wight-color: hsl(0, 0%, 100%);
     /* --sec-titl-color: ; */
 }
 
