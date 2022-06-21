@@ -26,10 +26,16 @@ window.addEventListener('click', function(event) {
 const register          = document.getElementById("register");
 const register__modal   = document.getElementById("register__modal");
 const close__register   = document.getElementById("close__register");
+const re_login          = document.getElementById("re_login");
 
 register.addEventListener('click', ()=>{
     login__modal.style.display = "none";
     register__modal.style.display = "block";
+});
+
+re_login.addEventListener('click', ()=>{
+    login__modal.style.display = "block";
+    register__modal.style.display = "none";
 });
 
 close__register.addEventListener('click', ()=>{

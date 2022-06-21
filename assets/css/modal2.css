@@ -166,3 +166,11 @@
     color: var(--wight-color);
     background: var(--main-nav-color);
 }
+
+/* ------ Register Modal content ------ */
+.modal .modal__container .modal__content .modal__form .phone__form{
+    width: 80%;
+    display: flex;
+    justify-content: space-between;
+    border: 1px solid red;
+}
