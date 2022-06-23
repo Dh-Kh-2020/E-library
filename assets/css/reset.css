@@ -51,3 +51,45 @@ a{
     -ms-border-radius: 4px;
     -o-border-radius: 4px;
 }
+
+/* Modern Browsers */
+::placeholder{
+    font-family: var(--main-font);
+    font-size: 16px;
+    color: var(--form-lable-color);
+}
+
+/* WebKit, Edge */
+::-webkit-input-placeholder{
+    font-family: var(--main-font);
+    font-size: 16px;
+    color: var(--form-lable-color);
+}
+
+/* Firefox 4-18 */
+:-moz-placeholder{
+    font-family: var(--main-font);
+    font-size: 16px;
+    color: var(--form-lable-color);
+}
+
+/* Firefox 19+ */
+::-moz-placeholder{
+    font-family: var(--main-font);
+    font-size: 16px;
+    color: var(--form-lable-color);
+}
+
+/* IE 10-11 */
+:-ms-input-placeholder{
+    font-family: var(--main-font);
+    font-size: 16px;
+    color: var(--form-lable-color);
+}
+
+/* Edge */
+::-ms-input-placeholder{
+    font-family: var(--main-font);
+    font-size: 16px;
+    color: var(--form-lable-color);
+}

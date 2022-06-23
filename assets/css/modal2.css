@@ -81,7 +81,8 @@
     position: relative;
 }
 
-.modal .modal__container .modal__content .modal__form .modal__input > label{
+.modal .modal__container .modal__content .modal__form .modal__input > label,
+.modal .phone__form .county__code > label{
     position: absolute;
     top: 2px;
     right: 4px;
@@ -172,5 +173,45 @@
     width: 80%;
     display: flex;
     justify-content: space-between;
-    border: 1px solid red;
+    gap: 0.625em;
+}
+
+.modal .modal__container .modal__content .modal__form .phone__form .modal__input > input{
+    float: right;
+}
+
+.modal .phone__form .county__code{
+    width: 32%;
+    background-color: var(--form-input-background);
+    color: var(--form-lable-color);
+    position: relative;
+    /* display: flex;
+    flex-direction: column; */
+    outline: none;
+    border: none;
+    border-radius: 4px;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    -ms-border-radius: 4px;
+    -o-border-radius: 4px;
+}
+
+.modal .phone__form .county__code > div > select{
+    width: 100px;
+    direction: ltr;
+    background: transparent;
+    position: absolute;
+    top: 20px;
+    /* left: 60px; */
+    outline: none;
+    /* border: none; */
+
+    /* to hide the default arrow of select */
+    -moz-appearance:none;
+    -webkit-appearance:none; /* Safari and Chrome */
+    appearance:none;
+}
+
+.modal .phone__form .county__code .dropdown__arrow-icon{
+    display: inline-block;
 }
