@@ -213,11 +213,11 @@
 }
 
 .modal .phone__form .county__code .dropdown__arrow-icon{
-    display: inline-block;
+    /* display: none; */
+    visibility: hidden;
 }
 
 .flag{
-    float: left;
     padding: 0 !important;
     margin: 0 5px 0 0;
     width: 16px; 
