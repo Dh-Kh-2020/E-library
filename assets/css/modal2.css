@@ -215,3 +215,12 @@
 .modal .phone__form .county__code .dropdown__arrow-icon{
     display: inline-block;
 }
+
+.flag{
+    float: left;
+    padding: 0 !important;
+    margin: 0 5px 0 0;
+    width: 16px; 
+    height: 11px;
+    background: url(../../images/msdropdown/icons/flagssprite_small.png) no-repeat;
+}

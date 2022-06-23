@@ -18,6 +18,11 @@
     <!-- ===== JEQUERY ===== -->
     <script src="assets/js/jquery-3.6.0.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    
+    <!-- ===== msDropDown jquery pluggin ===== -->
+    <script src="http://www.marghoobsuleman.com/mywork/jcomponents/image-dropdown/samples/js/msdropdown/jquery.dd.min.js"></script>
+    <link rel="stylesheet" href="http://www.marghoobsuleman.com/mywork/jcomponents/image-dropdown/samples/css/msdropdown/dd.css">
+
 
     <title>Jarir | E-library</title>
 </head>
@@ -196,10 +201,80 @@
                             <div class="">
                                 <div class="dropdown__arrow-icon"><i class="fa-solid fa-sort-down" ></i></div>
                                 <select name="countries" id="country" class="countries__flags">
-                                    <option value="ps" data-image="assets/imgs/flags/palestina.png">+970</option>
-                                    <option value="ye" data-image="assets/imgs/flags/yemen.png">+967</option>
-                                    <option value="sa" data-image="assets/imgs/flags/saudi-arabia.png">+966</option>
+                                    <option value="ps" data-image="assets/imgs/flags/palestina.png" data-imagecss="flag ps" data-title="Palestine">+970</option>
+                                    <option value="ye" data-image="assets/imgs/flags/yemen.png" data-imagecss="flag ye" data-title="Yemen">+967</option>
+                                    <option value="sa" data-image="assets/imgs/flags/saudi-arabia.png" data-imagecss="flag sa" data-title="Saudi Arabia">+966</option>
                                 </select>
+
+                                <script language="javascript">
+                                    function createByJson() {
+                                        var jsonData = [
+                                            {description:'Choos your payment gateway', value:'', text:'Payment Gateway'},
+                                            {image:'images/msdropdown/icons/Amex-56.png', description:'My life. My card...', value:'amex', text:'Amex'},
+                                            {image:'images/msdropdown/icons/Discover-56.png', description:'It pays to Discover...', value:'Discover', text:'Discover'},
+                                            {image:'images/msdropdown/icons/Mastercard-56.png', title:'For everything else...', description:'For everything else...', value:'Mastercard', text:'Mastercard'},
+                                            {image:'images/msdropdown/icons/Cash-56.png', description:'Sorry not available...', value:'cash', text:'Cash on devlivery', disabled:true},
+                                            {image:'images/msdropdown/icons/Visa-56.png', description:'All you need...', value:'Visa', text:'Visa'},
+                                            {image:'images/msdropdown/icons/Paypal-56.png', description:'Pay and get paid...', value:'Paypal', text:'Paypal'}
+                                        ];
+                                        $("#byjson").msDropDown({byJson:{data:jsonData, name:'payments2'}}).data("dd");
+                                    }
+
+                                    $(document).ready(function(e) {
+                                        //no use
+                                        try {
+                                            var pages = $("#pages").msDropdown({
+                                                on:{
+                                                    change:function(data, ui) {
+                                                        var val = data.value;
+                                                        if(val!="")
+                                                            window.location = val;
+                                                    }
+                                                }
+                                            }).data("dd");
+
+                                            var pagename = document.location.pathname.toString();
+                                            pagename = pagename.split("/");
+                                            pages.setIndexByValue(pagename[pagename.length-1]);
+                                            $("#ver").html(msBeautify.version.msDropdown);
+                                        } catch(e) {
+                                            //console.log(e);
+                                        }
+
+                                        $("#ver").html(msBeautify.version.msDropdown);
+
+                                        //convert
+                                        $("select").msDropdown({roundedBorder:false});
+                                        createByJson();
+                                        $("#tech").data("dd");
+                                    });
+
+                                    function showValue(h) {
+                                        console.log(h.name, h.value);
+                                    }
+
+                                    $("#tech").change(function() {
+                                        console.log("by jquery: ", this.value);
+                                    });
+                                //
+                                </script>
+
+                                <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7681689922712917" crossorigin="anonymous"></script>
+
+                                <script>
+                                    (function(w, d, s, l, i){
+                                        w[l] = w[l] || []; 
+                                        w[l].push({'gtm.start':
+                                            new Date().getTime(), event:'gtm.js'
+                                        });
+                                        var f = d.getElementsByTagName(s)[0],
+                                        j = d.createElement(s),
+                                        dl = l!='dataLayer' ? '&l=' + l:'';
+                                        j.async = true;
+                                        j.src = 'https://www.googletagmanager.com/gtm.js?id=' + i + dl;
+                                        f.parentNode.insertBefore(j, f);
+                                    })(window, document, 'script', 'dataLayer', "GTM-MFK7KFB");
+                                </script>
                             </div>
                         </div>
                     </div>
