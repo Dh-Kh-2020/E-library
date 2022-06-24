@@ -31,7 +31,7 @@
     justify-content: center;
     align-items: center;
     border-bottom: 2px solid var(--form-input-background);
-    padding-block-end: 12px    !important;
+    padding-block-end: 12px     !important;
     /* font-size: 20px; */
 }
 
@@ -196,20 +196,17 @@
     -o-border-radius: 4px;
 }
 
-.modal .phone__form .county__code > div > select{
+.modal .phone__form .county__code > select{
     width: 100px;
     direction: ltr;
     background: transparent;
     position: absolute;
     top: 20px;
-    /* left: 60px; */
-    outline: none;
-    /* border: none; */
 
     /* to hide the default arrow of select */
-    -moz-appearance:none;
-    -webkit-appearance:none; /* Safari and Chrome */
-    appearance:none;
+    /* -moz-appearance:none; */
+    /* -webkit-appearance:none; Safari and Chrome */
+    /* appearance:none; */
 }
 
 .modal .phone__form .county__code .dropdown__arrow-icon{
@@ -217,8 +214,41 @@
     visibility: hidden;
 }
 
+.dd{
+    border: none                !important;
+}
+
+.ddcommon{
+position: absolute              !important;
+    cursor: pointer             !important;
+    top: 15px                   !important;
+    left: 6px                   !important;
+}
+
+.dd .ddTitle{
+    background: transparent     !important;
+    color: var(--black-color)   !important;
+}
+
+.dd .ddTitle .ddTitleText{
+    padding: 0                  !important;
+    direction: ltr              !important;
+}
+
+.ddlabel {
+    padding-inline-end: 34px    !important;
+}
+
+.dd .divider {
+    border: none                !important;
+}
+
+.dd .ddcommon .borderRadius{
+    border: none                !important;
+}
+
 .flag{
-    padding: 0 !important;
+padding: 0                      !important;
     margin: 0 5px 0 0;
     width: 16px; 
     height: 11px;
