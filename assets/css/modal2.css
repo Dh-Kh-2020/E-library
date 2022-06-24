@@ -209,7 +209,7 @@
     /* appearance:none; */
 }
 
-/* Re-Styling some of default styles of dd.css of msDropDown JQuery Pluggin */
+/* Re-Styling some of default styles of dd.css of msDropDown JQuery Pluggin to implement country phone code select */
 .dd{
     border: none                !important;
 }
@@ -231,11 +231,11 @@ position: absolute              !important;
     direction: ltr              !important;
 }
 
-.ddlabel {
+.ddlabel{
     padding-inline-end: 34px    !important;
 }
 
-.dd .divider {
+.dd .divider{
     border: none                !important;
 }
 
@@ -243,11 +243,28 @@ position: absolute              !important;
     border: none                !important;
 }
 
-/* To Appear flags images inside select */
+/* Appearing flags images inside select */
 .flag{
     padding: 0                  !important;
     margin: 0 5px 0 0;
     width: 16px; 
     height: 11px;
     background: url(../../images/msdropdown/icons/flagssprite_small.png) no-repeat;
+}
+
+/* Styling options of select of country phone code */
+.dd .ddChild{
+    direction: ltr;
+    left: -6px                  !important;
+    top: 29px                   !important;
+    border-top-left-radius: 4px !important;
+    border-top-right-radius: 4px !important;
+}
+
+.dd .ddChild li{
+    padding: 4px                !important;
+}
+
+.ddcommon .ddChild{
+    width: 113%                 !important;
 }
