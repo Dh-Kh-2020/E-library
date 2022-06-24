@@ -209,11 +209,7 @@
     /* appearance:none; */
 }
 
-.modal .phone__form .county__code .dropdown__arrow-icon{
-    /* display: none; */
-    visibility: hidden;
-}
-
+/* Re-Styling some of default styles of dd.css of msDropDown JQuery Pluggin */
 .dd{
     border: none                !important;
 }
@@ -247,8 +243,9 @@ position: absolute              !important;
     border: none                !important;
 }
 
+/* To Appear flags images inside select */
 .flag{
-padding: 0                      !important;
+    padding: 0                  !important;
     margin: 0 5px 0 0;
     width: 16px; 
     height: 11px;
