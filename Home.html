@@ -161,8 +161,8 @@
             <div class="modal__content">
                 <form action="" class="modal__form">
                     <div class="modal__input">
-                        <label for="email">البريد الإلكتروني أو رقم الجوال</label>
-                        <input type="text" name="" id="email" >
+                        <label for="email_phone">البريد الإلكتروني أو رقم الجوال</label>
+                        <input type="text" name="" id="email_phone" >
                     </div>
                     <div class="modal__input">
                         <label for="password">كلمة السر</label>
@@ -212,12 +212,62 @@
                                 </script>
                         </div>
                     </div>
-                </form>
-                <!-- <form action="" class="modal__form">
 
-                </form> -->
+                    <p class="p__of-phone-code">سوف نرسل لك <b>رمز التحقق عن طريق رسالة نصية</b></p>
+
+                    <div class="modal__input">
+                        <input type="submit" name="" id="verification_code" class="btn btn--register" value="إرسال رمز التحقق">
+                    </div>
+                <!-- </form>
+
+                <form action="" class="modal__form"> -->
+                    <div class="modal__input">
+                        <label for="f_name">الاسم الأول</label>
+                        <input type="text" name="" id="f_name" >
+                    </div>
+                    <div class="modal__input">
+                        <label for="l_name">اسم العائلة</label>
+                        <input type="text" name="" id="l_name" >
+                    </div>
+                    <div class="modal__input">
+                        <label for="email">البريد الإلكتروني</label>
+                        <input type="email" name="" id="email" >
+                    </div>
+                    <div class="modal__input">
+                        <label for="psw">كلمة السر</label>
+                        <input type="password" name="" id="psw" >
+                    </div>
+                    <div class="modal__input">
+                        <label for="re_psw">تأكيد كلمة السر</label>
+                        <input type="password" name="" id="re_psw" >
+                    </div>
+
+                    <div class="modal__policy">
+                        <div class="checkbox__container">
+                            <input type="checkbox" id="terms" checked>
+                            <span class="checkmark"></span>
+                            <label for="terms">أوافق على</label> <a href="#">الشروط والأحكام</a>
+                        </div>
+                        <div class="checkbox__container">
+                            <input type="checkbox" id="Join_newsletter" checked>
+                            <span class="checkmark"></span>
+                            <label for="Join_newsletter">التسجيل للإنضمام للنشرة البريدية</label>
+                        </div>
+                    </div>
+
+                    <div class="modal__input">
+                        <input type="submit" name="" id="register" class="btn btn--register" value="إنشاء حساب">
+                    </div>
+                </form>
+
+                <div class="do__login">
+                    لديك حساب؟  
+                    <span id="re_login">
+                        تسجيل الدخول
+                        <span class="icon__to-login"><i class="fa-solid fa-angle-right"></i></span>
+                    </span> 
+                </div>
             </div>
-            <span id="re_login">تسجيل الدخول</span>
         </div>
     </div>
     <!-- End Register modal -->
