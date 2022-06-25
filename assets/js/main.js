@@ -13,15 +13,6 @@ close__login.addEventListener('click', ()=>{
     login__modal.style.display = "none";
 });
 
-// When the user clicks anywhere outside of login modal, close it
-window.addEventListener('click', function(event) {
-    var log_modal = document.getElementById('login__modal');
-
-    if (event.target == log_modal) {
-        log_modal.style.display = "none";
-    }
-});
-
 // ========== Register modal
 const register          = document.getElementById("register");
 const register__modal   = document.getElementById("register__modal");
@@ -42,11 +33,13 @@ close__register.addEventListener('click', ()=>{
     register__modal.style.display = "none";
 });
 
-// When the user clicks anywhere outside of register modal, close it
+// ========== When the user clicks anywhere outside of the modal container, close it
 window.addEventListener('click', function(event) {
+    var log_modal = document.getElementById('login__modal');
     var reg_modal = document.getElementById('register__modal');
 
-    if (event.target == reg_modal) {
+    if (event.target == log_modal || event.target == reg_modal) {
+        log_modal.style.display = "none";
         reg_modal.style.display = "none";
     }
 });
