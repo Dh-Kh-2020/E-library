@@ -35,90 +35,6 @@
             <a href="#" class="signup-now" id="login" >
                 <span class="nav-icons"><i class="fas fa-user"></i></span> ادخل لحسابك أو سجل الآن 
             </a>
-
-                <!-- login modal -->
-                <!-- <div class="modal" id="modal__login">
-                    <div class="modal__container">
-                        <h1 class="modal__title">تسجيل الدخول</h1>
-                        <span class="close" id="close__login">&times;</span>
-                        <div class="modal__item">
-                            <form action="" class="modal__form">
-                                <div class="modal__input">
-                                    <label for="email">البريد الإلكتروني أو رقم الجوال</label>
-                                    <input type="text" name="" id="email" >
-                                </div>
-                                <div class="modal__input">
-                                    <label for="oassword">كلمة السر</label>
-                                    <input type="password" name="" id="password" >
-                                </div>
-                                <a href="#" class="modal__link">نسيت؟</a>
-                                <button class="btn btn--red btn--md">تسجيل الدخول</button>
-                            </form>
-                            <label class="modal__label" for="register">ليس لديك حساب؟</label>
-                            <button class="btn btn-hov" id="register">إنشاء حساب جديد</button>
-                        </div>
-                    </div>
-                </div> -->
-
-                <!-- SIGNUP MODAL -->
-                <!-- <div class="modal modal--top" id="modal__register">
-                    <div class="modal__container">
-                        <h1 class="modal__title">إنشاء حساب </h1>
-                        <span class="close" id="close__register">&times;</span>
-                        <div class="modal__item">
-                            <form action="" class="modal__form">
-                                <div class="modal__phone">
-                                    <div class="modal__input">
-                                        <label for="phone">رقم الجوال</label>
-                                        <input type="text" name="" id="phone" >
-                                    </div>
-                                    <div>
-                                        <label for="country">رمز البلد</label>
-                                        <select name="" id="country">
-                                            <option value=""><img src="assets/imgs/icons/svgexport-14.svg">+967</option>
-                                            <option value="">+970</option>
-                                        </select>
-                                    </div>
-                                </div>
-                                <p>سوف نرسل لك <b>رمز التحقق عن طريق رسالة نصية</b></p>
-                                <button class="btn btn--md btn--darkgray btn--no-bottom">إرسال رمز التحقق</button>
-                                <div class="modal__input">
-                                    <label for="first-name">الاسم الاول</label>
-                                    <input type="text" name="" id="first-name" >
-                                </div>
-                                <div class="modal__input">
-                                    <label for="last-name">اسم العائلة</label>
-                                    <input type="text" name="" id="last-name" >
-                                </div>
-                                <div class="modal__input">
-                                    <label for="email">البريد الإلكتروني</label>
-                                    <input type="email" name="" id="email" >
-                                </div>
-                                <div class="modal__input">
-                                    <label for="conferm-email">تأكيد البريد الإلكتروني</label>
-                                    <input type="text" name="" id="conferm-email" >
-                                </div>
-                                <div class="modal__input">
-                                    <label for="password">كلمة السر</label>
-                                    <input type="password" name="" id="password" >
-                                </div>
-                                <div class="modal__policy">
-                                    <div>
-                                        <input type="checkbox">
-                                        <label for="">أوافق على</label><a href="#">الشروط والأحكام</a>
-                                    </div>
-                                    <div>
-                                        <input type="checkbox">
-                                        <label for="">التسجيل للإنضمام للنشرة البريدية</label>
-                                    </div>
-                                </div>
-                                <button class="btn btn--md btn--darkgray">إنشاء الحساب</button>
-                            </form>
-                            <label class="modal__label" for="register"> لديك حساب؟ تسجيل الدخول</label>
-                        </div>
-                    </div>
-                </div>  -->
-
             <a href="#"><span class="nav-icons"><i class="fas fa-star"></i></span> الرئيسية </a>
             <a href="#"><span class="nav-icons"><i class="fas fa-truck"></i></span> من نحن </a>
             <a href="#"><span class="nav-icons"><i class="uil uil-shield-check"></i></i></span> اتصل بنا</a>
@@ -148,10 +64,9 @@
     <!--  ====== END HEADER ====== -->
 
     <!-- ========== MODAL ========== -->
-
     <!-- Login modal -->
     <div class="modal" id="login__modal">
-        <div class="modal__container">
+        <div class="modal__container login__container">
             <div class="modal__header">
                 <h1 class="modal__title">تسجيل الدخول</h1>
                 <div class="close" id="close__login">
@@ -183,7 +98,7 @@
 
     <!-- Register modal -->
     <div class="modal" id="register__modal">
-        <div class="modal__container">
+        <div class="modal__container register__container">
             <div class="modal__header">
                 <h1 class="modal__title">إنشاء حساب</h1>
                 <div class="close" id="close__register">
@@ -271,66 +186,6 @@
         </div>
     </div>
     <!-- End Register modal -->
-
-    <!-- SIGNUP MODAL -->
-    <!-- <div class="modal modal--top" id="register__modal">
-        <div class="modal__container">
-            <h1 class="modal__title">إنشاء حساب </h1>
-            <span class="close" id="close__register">&times;</span>
-            <div class="modal__item">
-                <form action="" class="modal__form">
-                    <div class="modal__phone">
-                        <div class="modal__input">
-                            <label for="phone">رقم الجوال</label>
-                            <input type="text" name="" id="phone" >
-                        </div>
-                        <div>
-                            <label for="country">رمز البلد</label>
-                            <select name="" id="country">
-                                <option value=""><img src="assets/imgs/icons/svgexport-14.svg">+967</option>
-                                <option value="">+970</option>
-                            </select>
-                        </div>
-                    </div>
-                    <p>سوف نرسل لك <b>رمز التحقق عن طريق رسالة نصية</b></p>
-                    <button class="btn btn--md btn--darkgray btn--no-bottom">إرسال رمز التحقق</button>
-                    <div class="modal__input">
-                        <label for="first-name">الاسم الاول</label>
-                        <input type="text" name="" id="first-name" >
-                    </div>
-                    <div class="modal__input">
-                        <label for="last-name">اسم العائلة</label>
-                        <input type="text" name="" id="last-name" >
-                    </div>
-                    <div class="modal__input">
-                        <label for="email">البريد الإلكتروني</label>
-                        <input type="email" name="" id="email" >
-                    </div>
-                    <div class="modal__input">
-                        <label for="conferm-email">تأكيد البريد الإلكتروني</label>
-                        <input type="text" name="" id="conferm-email" >
-                    </div>
-                    <div class="modal__input">
-                        <label for="password">كلمة السر</label>
-                        <input type="password" name="" id="password" >
-                    </div>
-                    <div class="modal__policy">
-                        <div>
-                            <input type="checkbox">
-                            <label for="">أوافق على</label><a href="#">الشروط والأحكام</a>
-                        </div>
-                        <div>
-                            <input type="checkbox">
-                            <label for="">التسجيل للإنضمام للنشرة البريدية</label>
-                        </div>
-                    </div>
-                    <button class="btn btn--md btn--darkgray">إنشاء الحساب</button>
-                </form>
-                <label class="modal__label" for="register"> لديك حساب؟ تسجيل الدخول</label>
-            </div>
-        </div>
-    </div>  -->
-
     <!-- ========== END MODAL ========== -->
 
     <!--  ====== MAIN SECTION ====== -->

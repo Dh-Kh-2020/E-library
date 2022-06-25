@@ -5,7 +5,7 @@
     height: 100%;
     z-index: 999;
     position: fixed;
-    padding-top: 100px; /* Location of the box */
+    /* padding-top: 100px; Location of the box */
     left: 0;
     top: 0;
     overflow-y: auto;     /* Enable scroll if needed */
@@ -126,6 +126,10 @@
 }
 
 /* ------ Login Modal content ------ */
+.modal .login__container{
+    margin-block-start: 100px;
+}
+
 .modal .modal__container .modal__content .modal__form .login-modal__link{
     top: -98px;
     right: 33%;
@@ -169,6 +173,10 @@
 }
 
 /* ------ Register Modal content ------ */
+.modal .register__container{
+    margin-block: 10px;
+}
+
 .modal .modal__container .modal__content .modal__form .phone__form{
     width: 80%;
     display: flex;
@@ -273,8 +281,8 @@ position: absolute              !important;
 
 .modal .modal__container .modal__content .modal__form .p__of-phone-code,
 .modal .modal__container .modal__content .modal__form .modal__policy{
-    text-align: right;
     width: 80%;
+    text-align: right;
     color: var(--form-lable-color);
 }
 
@@ -290,6 +298,7 @@ position: absolute              !important;
 }
 
 .modal .modal__container .modal__content .modal__form .modal__policy{
+    margin-block: 6px;
     font-weight: 100;
     font-size: 14px;
 }
@@ -305,13 +314,15 @@ position: absolute              !important;
     display: block;
     position: relative;
     padding-inline-start: 40px;
-    margin-block-start: 6px;
-    margin-block-end: 12px;
     cursor: pointer;
     -webkit-user-select: none;
     -moz-user-select: none;
     -ms-user-select: none;
     user-select: none;
+}
+
+.checkbox__container:first-child{
+    margin-block-end: 16px;
 }
 
 .modal .modal__container .modal__content .modal__form .modal__policy .checkbox__container > label{
@@ -385,6 +396,7 @@ position: absolute              !important;
 .modal .modal__container .modal__content .do__login #re_login{
     color: var(--blue-color);
     position: relative;
+    cursor: pointer;
 }
 
 .modal .modal__container .modal__content .do__login #re_login .icon__to-login{
