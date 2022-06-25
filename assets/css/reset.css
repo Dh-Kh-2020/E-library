@@ -11,7 +11,9 @@
     font-family: 'Tajawal', 'Poppins', 'Work Sans', sans-serif;
     --main-font: 'Tajawal', 'Poppins', 'Work Sans', sans-serif;
     --body-bg-color: hsl(0, 0%, 100%);
-    --main-nav-color: #42526e;
+    --main-nav-bg: hsl(220, 33%, 98%);
+    --main-nav-text-color: hsl(218, 25%, 35%);
+    --nav-border: hsl(222, 33%, 92%);
     --form-lable-color:hsl(213, 12%, 64%);
     --form-input-background: hsl(218, 33%, 95%);
     --footer-1sr-bg: #333;

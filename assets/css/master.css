@@ -1,4 +1,5 @@
 @import 'reset.css';
+@import 'navigation.css';
+@import 'modal.css';
 @import 'style.css';
 @import 'responsive.css';
-@import 'modal.css';
