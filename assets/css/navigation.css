@@ -13,13 +13,13 @@
     list-style-type: none;
     display: flex;
     flex-wrap: nowrap;
-    /* justify-content: space-evenly; */
-    justify-content: center;
+    justify-content: space-evenly;
+    /* justify-content: center; */
     align-items: center;
 }
 
 .navigation ul li{
-    padding: 6px 30px;
+    padding: 8px 30px;
     border-right: 1px solid var(--nav-border);
     cursor: pointer;
 }
