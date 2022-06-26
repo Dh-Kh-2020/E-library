@@ -1,63 +1,9 @@
-
-
-body{
-    background-color: var(--body-bg-color);
-    
-    /* display: grid;
-    grid-template-columns: auto;
-    grid-template-rows: 10% auto 20%;
-    grid-template-areas: 
-        "header"
-        "main"
-        "footer"; */
-}
-
-a{
-    text-decoration: none;
-}
-
-ul{
-    list-style: none;
-}
-
 /* ====== HEADER ====== */
-
 header{
     /* grid-area: header; */
     /* background-color: #f9fafc; */
     display: flex;
     flex-direction: column;
-}
-
-.main-nav{
-    background-color: #f9fafc;
-    display: flex;
-    justify-content: space-evenly;
-}
-
-.main-nav a{
-    /* border-right: 1px solid #e5e9f2; */
-    /* border-bottom: 1px solid #e5e9f2;
-    border-left: 1px solid #e5e9f2; */
-    padding: 5px 20px;
-    font-size: 0.9rem;
-    /* font-weight: 700; */
-    color: var(--main-nav-color);
-    /* display: inline-block;
-    text-align: center; */
-}
-
-.main-nav .signup-now{
-    font-weight: 700;
-}
-
-/* .nav-icons{
-    border: 1px solid red;
-} */
-
-.main-nav img{
-    width: 18px;
-    height: 18px;
 }
 
 .header-wrapper{
