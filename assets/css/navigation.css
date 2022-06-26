@@ -24,7 +24,7 @@
     cursor: pointer;
 }
 
-.navigation ul li:hover *{      
+.navigation ul li:hover span > svg *{      
     color: var(--blue-color);
     fill: var(--blue-color);
 }
