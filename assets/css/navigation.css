@@ -18,8 +18,12 @@
     align-items: center;
 }
 
+.navigation ul li:nth-last-child(2){
+    flex-basis: 256px;
+}
+
 .navigation ul li{
-    padding: 8px 30px;
+    padding: 8px 22px;
     border-right: 1px solid var(--nav-border);
     cursor: pointer;
 }
