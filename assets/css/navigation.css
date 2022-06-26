@@ -24,10 +24,7 @@
     cursor: pointer;
 }
 
-.navigation ul li:hover,
-.navigation ul li a:hover,
-.navigation ul li svg:hover path    /* to Coloring SVG icon when it is hovered */
-{
+.navigation ul li:hover *{      
     color: var(--blue-color);
     fill: var(--blue-color);
 }
