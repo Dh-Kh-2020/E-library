@@ -13,18 +13,23 @@
     list-style-type: none;
     display: flex;
     flex-wrap: nowrap;
-    justify-content: space-evenly;
+    /* justify-content: space-evenly; */
+    justify-content: center;
     align-items: center;
 }
 
 .navigation ul li{
-    padding: 6px 16px;
+    padding: 6px 30px;
     border-right: 1px solid var(--nav-border);
     cursor: pointer;
 }
 
-.navigation ul li:hover{
+.navigation ul li:hover,
+.navigation ul li a:hover,
+.navigation ul li svg:hover path    /* to Coloring SVG icon when it is hovered */
+{
     color: var(--blue-color);
+    fill: var(--blue-color);
 }
 
 .navigation ul li:first-of-type,
@@ -36,11 +41,19 @@
     border-right: none;
 }
 
-.navigation ul li .li__text{
-    padding-inline-start: 6px;
+.navigation ul li a{
+    color: var(--main-nav-text-color);
 }
 
 .navigation ul li img{
     width: 15px;
     height: 15px;
+}
+
+.navigation ul li .li__text{
+    padding-inline-start: 6px;
+}
+
+.navigation ul li:last-of-type .li__text{
+    padding-inline-end: 6px;
 }
