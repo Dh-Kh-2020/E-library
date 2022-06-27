@@ -7,7 +7,6 @@
 }
 
 :root{
-    direction: rtl;
     font-family: 'Tajawal', 'Poppins', 'Work Sans', sans-serif;
     --main-font: 'Tajawal', 'Poppins', 'Work Sans', sans-serif;
     --body-bg-color: hsl(0, 0%, 100%);

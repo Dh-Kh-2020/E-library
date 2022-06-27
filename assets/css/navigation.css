@@ -7,6 +7,7 @@
     color: var(--main-nav-text-color);
     font-size: 14px;
     border-bottom: 1px solid var(--nav-border);
+    z-index: 10;
 }
 
 .navigation ul{
