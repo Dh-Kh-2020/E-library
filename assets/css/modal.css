@@ -172,7 +172,8 @@
 
 .modal__content .btn__to-registe:hover{
     color: var(--wight-color);
-    background: var(--main-nav-color);
+    /* background: var(--main-nav-color); */
+    background: var(--main-nav-text-color);
 }
 
 /* ------ Register Modal content ------ */
