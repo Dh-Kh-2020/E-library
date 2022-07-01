@@ -151,7 +151,7 @@
     font-weight: 500;
 }
 
-.modal__content .btn__to-registe{
+.modal__content .btn__to-register{
     width: 55%;
     padding: 10px 8px;
     font-family: var(--main-font);
@@ -170,7 +170,7 @@
     transition: .4s ease-in-out;
 }
 
-.modal__content .btn__to-registe:hover{
+.modal__content .btn__to-register:hover{
     color: var(--wight-color);
     /* background: var(--main-nav-color); */
     background: var(--main-nav-text-color);
